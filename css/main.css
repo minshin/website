@@ -19,7 +19,7 @@ body{ background-image:url(images/bg.png);}
 .navbox li{ float:left; margin:0 40px; line-height:40px;}
 .navbox a{
 	font-size:14px;color:white;
-	opacity: .7;
+	opacity: .8;
 	transition:opacity 0.2s ease 0s;
 	display: block;
 }
