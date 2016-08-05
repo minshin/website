@@ -1,112 +1,24 @@
 <!doctype html>
 <html>
 <head>
-<style>
-*{ margin:0; padding:0; font-family:Arial, Helvetica, sans-serif,"宋体"; font-size:12px;}
-li{ list-style:none;}
-img{border:none 0;}
-body{ background-image:url(images/bg.png);}
-/*header*/
-.header{overflow:hidden;}
-.headerbox{ width:980px; margin:10px auto; }
-.logo{ float:left; display:block; margin-right:80px;}
-.phone{overflow:hidden; padding-top:10px; float:left;}
-.phone img{ float:left; display:block;}
-.phone p{ float:left; margin-left:5px; font-size:14px; font-family:"微软雅黑"; color:#a1653a;}
-.header_rt{ float:right; color:#8a8a8a;}
-.header_rt a{color:#626262; margin:0 10px; line-height:50px;}
-/*nav*/
-.nav { background-color:#d79e6d; margin-top:10px;}
-.navbox{width:980px; margin:0 auto; }
-.navbox li{ float:left; margin:0 20px; line-height:48px;}
-.navbox a{ font-family:"微软雅黑";font-size:14px;color:white;}
-.nav .info{color:#804d1f;}
-.navbox a:hover{color:#804d1f; text-decoration:none;}
-/*mainbox*/
-.mainbox{ width:980px; height:710px; margin:15px auto; overflow:hidden;}
-/*main_top*/
-.main_top{ background-color:white; border:1px solid #e6e6e6;}
-.top_tl{ overflow:hidden; border-bottom:1px solid #e6e6e6; height:60px;}
-.top_tl h2{ float:left; font-family:"微软雅黑"; font-size:16px; line-height:59px; font-weight:bold; width:135px; text-align:center; margin-top:0; margin-bottom:0; cursor:pointer; border-bottom:1px solid #e6e6e6; border-right:1px solid #e6e6e6;}
-.active{ color:#e0a873;}
-/*infobox*/
-.infobox{ overflow:hidden;}
-.infobox img{ display:block; float:left;}
-.info_tx{ float:right; padding:20px;}
-.info_tx h3{ line-height:50px; width:135px; text-align:center; background-color:#e0a873; margin:0;}
-.info_tx h3 a{ color:white; font-family:"微软雅黑"; font-size:18px; font-weight:bold;}
-.info_tx ul{ margin:15px 0;}
-.info_tx li{ background-image:url(images/shu.png); background-repeat:no-repeat; background-position:left center;}
-.info_tx li a{ color:#555; line-height:30px; padding-left:26px;}
-.info_tx li a:hover{ color:red;}
-.info_tx li span{ color:#999; float:right;}
-.more{ background-color:#ccc; width:80px; line-height:30px; text-align:center; margin-left:370px; margin-bottom:0;}
-.more a{ color:#555; font-weight:bold;}
-.hid{ display:none;}
-/*main_bottom*/
-.main_bottom{ overflow:hidden; margin-top:15px;}
-.new{ float:left; background-color:white; padding:20px; width:480px;}
-.new h2{ font-family:"微软雅黑"; font-size:16px; font-weight:bold; color:#e0a873; margin:0; margin-bottom:10px;}
-.new li{ overflow:hidden; background-image:url(images/arrow.png); background-repeat:no-repeat; background-position:left center; padding-left:10px; line-height:34px;}
-.new span{ float:right;}
-.new a{ color:#555;}
-.rt{ float:right;}
-/*footer*/
-.footer{ background-color:white;}
-.footerbox{ width:980px; margin:0 auto;color:#636363; text-align:center;}
-.footerbox ul{ overflow:hidden; margin-left:300px; padding-top:15px;}
-.footerbox li{ float:left;}
-.footerbox a{ color:#626262; margin:0 5px;}
-.footerbox div{ padding-bottom:10px;}
-</style>
-<script src="JS/jquery.js"></script>
-<script>
-$(function(){
-	var n=0;
-	$(".top_tl h2").click(function(){
-		$(".top_tl h2").removeClass("active");
-		$(this).addClass("active");
-		n=$(".top_tl h2").index(this);
-		$(".infobox").addClass("hid");
-		$(".infobox").eq(n).removeClass("hid");	
-		});	
-})
-</script>
-<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
 <meta charset="utf-8">
-<title>资讯中心-易如投资</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>首页-沣润金服</title>
+<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+<link href="css/main.css" rel="stylesheet" type="text/css">
+<script src="js/jquery.js"></script>
+<script src="js/main.js"></script>
 </head>
 
 <body>
-<div class="header">
-	<div class="headerbox">
-        <a class="logo" href="#"><img src="images/logo.png"></a>
-        <div class="phone">
-        	<img src="images/phone.png">
-            <p>客服热线<br></p>
-        </div>
-        <div class="header_rt">
-            <a href="#">收藏网站</a>|
-            <a href="#">设为主页</a>
-        </div>
-	</div>
-</div>
-<div class="nav">
-    <ul class="navbox">
-        <li><a class="index" href="index.html">首页</a></li>
-        <li><a class="product" href="product.html">基金产品</a></li>	
-        <li><a class="online" href="">网上交易</a></li>	
-        <li><a class="finance" href="finance.html">专户理财</a></li>
-        <li><a class="service" href="service.html">客户服务</a></li>
-        <li><a class="info" href="info.html">资讯中心</a></li>
-        <li><a class="about" href="about.html">走进易如基金</a></li>		
-    </ul>
-</div>
+<script type="text/javascript" src="js/header.js"></script>
+
 <div class="mainbox">
 	<div class="main_top">
     	<div class="top_tl">
-        	<h2 class="active">易如晨报</h2>
-            <h2>聚焦易如</h2>
+        	<h2 class="active">沣润晨报</h2>
+            <h2>聚焦沣润</h2>
         </div>
         <div class="infobox">
         	<img src="images/chenbaoBg.jpg">
@@ -114,23 +26,23 @@ $(function(){
                 <h3><a href="">我要订阅</a></h3>
                 <ul>
                     <li>
-                        <a href="info1 (1).html">易如晨报2014.11.7</a>
+                        <a href="info1 (1).html">沣润晨报2014.11.7</a>
                         <span>2014-11-07</span>
                     </li>
                     <li>
-                        <a href="info1 (2).html">易如晨报2014.11.6</a>
+                        <a href="info1 (2).html">沣润晨报2014.11.6</a>
                         <span>2014-11-06</span>
                     </li>
                     <li>
-                        <a href="info1 (3).html">易如晨报2014.11.5</a>
+                        <a href="info1 (3).html">沣润晨报2014.11.5</a>
                         <span>2014-11-05</span>
                     </li>
                     <li>
-                        <a href="info1 (4).html">易如晨报2014.11.4</a>
+                        <a href="info1 (4).html">沣润晨报2014.11.4</a>
                         <span>2014-11-04</span>
                     </li>
                     <li>
-                        <a href="info1 (5).html">易如晨报2014.11.3</a>
+                        <a href="info1 (5).html">沣润晨报2014.11.3</a>
                         <span>2014-11-03</span>
                     </li>
                 </ul>
@@ -150,15 +62,15 @@ $(function(){
                         <span>2014-10-22</span>
                     </li>
                     <li>
-                        <a href="info4.html">易如基金：债市慢牛行情或将延续</a>
+                        <a href="info4.html">沣润基金：债市慢牛行情或将延续</a>
                         <span>2014-09-10</span>
                     </li>
                     <li>
-                        <a href="info5.html">易如双债添利债券基金9月1日正式发行</a>
+                        <a href="info5.html">沣润双债添利债券基金9月1日正式发行</a>
                         <span>2014-09-02</span>
                     </li>
                     <li>
-                        <a href="info6.html">农行新发售易如新兴成长混合基金上市</a>
+                        <a href="info6.html">农行新发售沣润新兴成长混合基金上市</a>
                         <span>2014-08-21</span>
                     </li>
             </ul>
@@ -170,11 +82,11 @@ $(function(){
     	<div class="new">
         	<h2>最新公告</h2>
             <ul>
-            	<li><a href="info8.html">易如基金管理有限责任公司关于参加上海天天基金销...</a><span>[2014-11-10]</span></li>
-                <li><a href="info9.html">易如金账簿货币市场证券投资基金货币市场基金收益...</a><span>[2014-11-03]</span></li>
-                <li><a href="info10.html">易如龙混合型开放式证券投资基金2014年第3季...</a><span>[2014-10-27]</span></li>
-                <li><a href="info10.html">易如精选混合型开放式证券投资基金2014年第3...</a><span>[2014-10-27]</span></li>
-                <li><a href="info10.html">易如金账簿货币市场证券投资基金2014 年第3...</a><span>[2014-10-27]</span></li>
+            	<li><a href="info8.html">沣润基金管理有限责任公司关于参加上海天天基金销...</a><span>[2014-11-10]</span></li>
+                <li><a href="info9.html">沣润金账簿货币市场证券投资基金货币市场基金收益...</a><span>[2014-11-03]</span></li>
+                <li><a href="info10.html">沣润龙混合型开放式证券投资基金2014年第3季...</a><span>[2014-10-27]</span></li>
+                <li><a href="info10.html">沣润精选混合型开放式证券投资基金2014年第3...</a><span>[2014-10-27]</span></li>
+                <li><a href="info10.html">沣润金账簿货币市场证券投资基金2014 年第3...</a><span>[2014-10-27]</span></li>
                 <li style="background-image:none; text-align:right;"><a style="font-weight:bold; color:red;" href="info-more2.html">更多>></a></li>
             </ul>
         </div>
@@ -191,19 +103,7 @@ $(function(){
         </div>
     </div>
 </div>
-<div class="footer">
-	<div class="footerbox">
-        <ul>
-        	<li><a href="ZP.html">诚聘英才</a>|</li>
-            <li><a href="contact.html">联系我们</a>|</li>
-            <li><a href="tip.html">风险提示</a>|</li>
-            <li><a href="safe.html">安全提示</a>|</li>
-            <li><a href="clause.html">免责条款</a>|</li>
-            <li><a href="law.html">法律法规</a></li>
-        </ul>
-        <div>Copyright © 2006-2013 YIRU.com All rights reserved</div>
-        <div>北京易如投资管理有限公司版权所有</div>
-    </div>
-</div>
+<script type="text/javascript" src="js/footer.js"></script>
+
 </body>
 </html>

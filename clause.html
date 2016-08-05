@@ -1,87 +1,19 @@
 <!doctype html>
 <html>
 <head>
-<style>
-*{ margin:0; padding:0; font-family:Arial, Helvetica, sans-serif,"宋体"; font-size:12px;}
-li{ list-style:none;}
-img{border:none 0;}
-body{ background-image:url(images/bg.png);}
-/*header*/
-.header{overflow:hidden;}
-.headerbox{ width:980px; margin:10px auto; }
-.logo{ float:left; display:block; margin-right:80px;}
-.phone{overflow:hidden; padding-top:10px; float:left;}
-.phone img{ float:left; display:block;}
-.phone p{ float:left; margin-left:5px; font-size:14px; font-family:"微软雅黑"; color:#a1653a;}
-.header_rt{ float:right; color:#8a8a8a;}
-.header_rt a{color:#626262; margin:0 10px; line-height:50px;}
-/*nav*/
-.nav { background-color:#d79e6d; margin-top:10px;}
-.navbox{width:980px; margin:0 auto; }
-.navbox li{ float:left; margin:0 20px; line-height:48px;}
-.navbox a{font-family:"微软雅黑";font-size:14px;color:white;}
-.navbox a:hover{color:#804d1f; text-decoration:none;}
-/*mainbox*/
-.mainbox{ width:980px; margin:15px auto; overflow:hidden;}
-.add{ color:#999;}
-.add a{ color:#999;}
-/*right*/
-.mainbox_rt{ background-color:white; border:1px solid #e6e6e6; padding:20px; height:680px;}
-.mainbox_rt h3{ font-family:"微软雅黑"; font-size:22px; color:#555; margin:0; border-bottom:2px solid #e0a873;}
-.mainbox_rt h3 img{ margin-right:10px;}
-.mainbox_rt p{ text-indent:24px; margin-top:10px;}
-.map{ margin-top:20px;}
-/*footer*/
-.footer{ background-color:white;}
-.footerbox{ width:980px; margin:0 auto;color:#636363; text-align:center;}
-.footerbox ul{ overflow:hidden; margin-left:300px; padding-top:15px;}
-.footerbox li{ float:left;}
-.footerbox a{color:#626262; margin:0 5px;}
-.footerbox div{ padding-bottom:10px;}
-</style>
-<script src="JS/jquery.js"></script>
-<script>
-$(function(){
-	var n=0;
-	$(".worth_tl h2").click(function(){
-		$(".worth_tl h2").removeClass("bold");
-		$(this).addClass("bold");
-		n=$(".worth_tl h2").index(this);
-		$(".worth_hi").addClass("hid");
-		$(".worth_hi").eq(n).removeClass("hid");	
-		});	
-})
-</script>
-<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
 <meta charset="utf-8">
-<title>产品服务-易如付</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>关于沣润金服</title>
+<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+<link href="css/main.css" rel="stylesheet" type="text/css">
+<script src="js/jquery.js"></script>
+<script src="js/main.js"></script>
 </head>
 
 <body>
-<div class="header">
-	<div class="headerbox">
-        <a class="logo" href="#"><img src="images/logo.png"></a>
-        <div class="phone">
-        	<img src="images/phone.png">
-            <p>客服热线<br></p>
-        </div>
-        <div class="header_rt">
-            <a href="#">收藏网站</a>|
-            <a href="#">设为主页</a>
-        </div>
-	</div>
-</div>
-<div class="nav">
-    <ul class="navbox">
-        <li><a class="index" href="index.html">首页</a></li>
-        <li><a class="product" href="product.html">基金产品</a></li>	
-        <li><a class="online" href="">网上交易</a></li>	
-        <li><a class="finance" href="finance.html">专户理财</a></li>
-        <li><a class="service" href="service.html">客户服务</a></li>
-        <li><a class="info" href="info.html">资讯中心</a></li>
-        <li><a class="about" href="about.html">走进易如基金</a></li>		
-    </ul>
-</div>
+<script type="text/javascript" src="js/header.js"></script>
+
 <div class="mainbox">
 	<p class="add">当前位置:&nbsp;<a href="index.html">首页</a>&nbsp;>&nbsp;免责条款</p>
     <div class="mainbox_rt">
@@ -89,27 +21,15 @@ $(function(){
         	<img src="images/contact2.png">
             免责条款
         </h3>
-        <p>1. 易如基金管理有限责任公司就本网站运行的安全、无误及不中断不承担任何明示或默示的责任。您同意自行承担使用本网站服务的所有风险及因该等风险可能造成的任何损害。</p>
-        <p>2. 任何在本网站出现的或由本网站提供的所有信息(不论为何等形式)包括但不限于评论、预测、图表、指标、理论等应仅作为参考，您须对任何自主决定的行为负责。对此，易如基金管理有限责任公司不对任何错漏或疏忽承担任何法律责任，并郑重提醒您注意投资风险，在进行投资前应以中国证监会指定的信息披露媒体上正式公告的有关信息及相应基金的基金管理人按约定、指定方式公开发布的信息为准。</p>
-        <p>3. 您于此确认，易如基金管理有限责任公司对于您所使用本网站的各项服务、或无法使用各项服务所导致的任何直接、间接、衍生或特别损害，不应当承担任何法律责任。</p>
-        <p>4. 您已经充分了解到并同意，本网站可能因公司、其他合作方或相关电信部门的互联网软硬件设备故障或失灵、或人为操作疏忽而全部或部分中断、延迟、遗漏、产生误导或造成资料传输或储存上的错误、或遭第三人侵入系统篡改或伪造变造资料等，易如基金管理有限责任公司对此不承担任何责任。</p>
-        <p>5. 凡通过本网站与其他网站的链接，而获得其他网站所提供的网上资料、内容及服务，您应该自己进行辨别及判断，并应当由该等网站对其提供内容承担相应责任，易如基金管理有限责任公司对此不承担任何责任。</p>
-        <p>6. 易如基金管理有限责任公司应当具有法律法规规定的其它有关免责规定项下所有的一切权利；易如基金管理有限责任公司没有主张或迟延主张该等权利，并不应当被视为易如基金管理有限责任公司对于该等权利的弃权。</p>
+        <p>1. 沣润基金管理有限责任公司就本网站运行的安全、无误及不中断不承担任何明示或默示的责任。您同意自行承担使用本网站服务的所有风险及因该等风险可能造成的任何损害。</p>
+        <p>2. 任何在本网站出现的或由本网站提供的所有信息(不论为何等形式)包括但不限于评论、预测、图表、指标、理论等应仅作为参考，您须对任何自主决定的行为负责。对此，沣润基金管理有限责任公司不对任何错漏或疏忽承担任何法律责任，并郑重提醒您注意投资风险，在进行投资前应以中国证监会指定的信息披露媒体上正式公告的有关信息及相应基金的基金管理人按约定、指定方式公开发布的信息为准。</p>
+        <p>3. 您于此确认，沣润基金管理有限责任公司对于您所使用本网站的各项服务、或无法使用各项服务所导致的任何直接、间接、衍生或特别损害，不应当承担任何法律责任。</p>
+        <p>4. 您已经充分了解到并同意，本网站可能因公司、其他合作方或相关电信部门的互联网软硬件设备故障或失灵、或人为操作疏忽而全部或部分中断、延迟、遗漏、产生误导或造成资料传输或储存上的错误、或遭第三人侵入系统篡改或伪造变造资料等，沣润基金管理有限责任公司对此不承担任何责任。</p>
+        <p>5. 凡通过本网站与其他网站的链接，而获得其他网站所提供的网上资料、内容及服务，您应该自己进行辨别及判断，并应当由该等网站对其提供内容承担相应责任，沣润基金管理有限责任公司对此不承担任何责任。</p>
+        <p>6. 沣润基金管理有限责任公司应当具有法律法规规定的其它有关免责规定项下所有的一切权利；沣润基金管理有限责任公司没有主张或迟延主张该等权利，并不应当被视为沣润基金管理有限责任公司对于该等权利的弃权。</p>
     </div>
 </div>
-<div class="footer">
-	<div class="footerbox">
-        <ul>
-        	<li><a href="ZP.html">诚聘英才</a>|</li>
-            <li><a href="contact.html">联系我们</a>|</li>
-            <li><a href="tip.html">风险提示</a>|</li>
-            <li><a href="safe.html">安全提示</a>|</li>
-            <li><a href="clause.html">免责条款</a>|</li>
-            <li><a href="law.html">法律法规</a></li>
-        </ul>
-        <div>Copyright © 2006-2013 YIRU.com All rights reserved</div>
-        <div>北京易如投资管理有限公司版权所有</div>
-    </div>
-</div>
+<script type="text/javascript" src="js/footer.js"></script>
+
 </body>
 </html>

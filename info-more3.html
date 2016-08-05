@@ -1,92 +1,19 @@
 <!doctype html>
 <html>
 <head>
-<style>
-*{ margin:0; padding:0; font-family:Arial, Helvetica, sans-serif,"宋体"; font-size:12px;}
-li{ list-style:none;}
-img{border:none 0;}
-body{ background-image:url(images/bg.png);}
-/*header*/
-.header{overflow:hidden;}
-.headerbox{ width:980px; margin:10px auto; }
-.logo{ float:left; display:block; margin-right:80px;}
-.phone{overflow:hidden; padding-top:10px; float:left;}
-.phone img{ float:left; display:block;}
-.phone p{ float:left; margin-left:5px; font-size:14px; font-family:"微软雅黑"; color:#a1653a;}
-.header_rt{ float:right; color:#8a8a8a;}
-.header_rt a{color:#626262; margin:0 10px; line-height:50px;}
-/*nav*/
-.nav { background-color:#d79e6d; margin-top:10px;}
-.navbox{width:980px; margin:0 auto; }
-.navbox li{ float:left; margin:0 20px; line-height:48px;}
-.navbox a{font-family:"微软雅黑";font-size:14px;color:white;}
-.nav .info{color:#804d1f;}
-.navbox a:hover{color:#804d1f; text-decoration:none;}
-/*mainbox*/
-.mainbox{ width:980px; margin:15px auto; overflow:hidden;}
-.add{ color:#999;}
-.add a{ color:#999;}
-/*right*/
-.mainbox_rt{ background-color:white; border:1px solid #e6e6e6; padding:20px; margin-bottom:15px; height:660px;}
-.mainbox_rt h3{ font-family:"微软雅黑"; font-size:22px; color:#555; margin:0;}
-.mainbox_rt h3 img{ margin-right:10px;}
-.mainbox_rt p{ text-indent:24px; margin-top:10px;}
-.map{ margin-top:20px;}
-.mainbox_rt ul{ margin-top:20px;}
-.mainbox_rt li{ overflow:hidden; background-image:url(images/arrow.png); background-repeat:no-repeat; background-position:left center; padding-left:10px; line-height:34px;}
-.mainbox_rt span{ float:right;}
-.mainbox_rt a{ color:#555;}
-/*footer*/
-.footer{ background-color:white;}
-.footerbox{ width:980px; margin:0 auto;color:#636363; text-align:center;}
-.footerbox ul{ overflow:hidden; margin-left:300px; padding-top:15px;}
-.footerbox li{ float:left;}
-.footerbox a{color:#626262; margin:0 5px;}
-.footerbox div{ padding-bottom:10px;}
-</style>
-<script src="JS/jquery.js"></script>
-<script>
-$(function(){
-	var n=0;
-	$(".worth_tl h2").click(function(){
-		$(".worth_tl h2").removeClass("bold");
-		$(this).addClass("bold");
-		n=$(".worth_tl h2").index(this);
-		$(".worth_hi").addClass("hid");
-		$(".worth_hi").eq(n).removeClass("hid");	
-		});	
-})
-</script>
-<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
 <meta charset="utf-8">
-<title>专户理财-易如投资</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>首页-沣润金服</title>
+<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+<link href="css/main.css" rel="stylesheet" type="text/css">
+<script src="js/jquery.js"></script>
+<script src="js/main.js"></script>
 </head>
 
 <body>
-<div class="header">
-	<div class="headerbox">
-        <a class="logo" href="#"><img src="images/logo.png"></a>
-        <div class="phone">
-        	<img src="images/phone.png">
-            <p>客服热线<br></p>
-        </div>
-        <div class="header_rt">
-            <a href="#">收藏网站</a>|
-            <a href="#">设为主页</a>
-        </div>
-	</div>
-</div>
-<div class="nav">
-    <ul class="navbox">
-        <li><a class="index" href="index.html">首页</a></li>
-        <li><a class="product" href="product.html">基金产品</a></li>	
-        <li><a class="online" href="">网上交易</a></li>	
-        <li><a class="finance" href="finance.html">专户理财</a></li>
-        <li><a class="service" href="service.html">客户服务</a></li>
-        <li><a class="info" href="info.html">资讯中心</a></li>
-        <li><a class="about" href="about.html">走进易如基金</a></li>		
-    </ul>
-</div>
+<script type="text/javascript" src="js/header.js"></script>
+
 <div class="mainbox">
 	<p class="add">当前位置:&nbsp;<a href="index.html">首页</a>&nbsp;>&nbsp;<a href="info.html">资讯中心</a>&nbsp;>&nbsp;资讯&nbsp;>&nbsp;财经新闻</p>
       <div class="mainbox_rt">
@@ -105,19 +32,7 @@ $(function(){
             </ul>
     </div>
 </div>
-<div class="footer">
-	<div class="footerbox">
-        <ul>
-        	<li><a href="ZP.html">诚聘英才</a>|</li>
-            <li><a href="contact.html">联系我们</a>|</li>
-            <li><a href="tip.html">风险提示</a>|</li>
-            <li><a href="safe.html">安全提示</a>|</li>
-            <li><a href="clause.html">免责条款</a>|</li>
-            <li><a href="law.html">法律法规</a></li>
-        </ul>
-        <div>Copyright © 2006-2013 YIRU.com All rights reserved</div>
-        <div>北京易如投资管理有限公司版权所有</div>
-    </div>
-</div>
+<script type="text/javascript" src="js/footer.js"></script>
+
 </body>
 </html>

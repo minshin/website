@@ -1,120 +1,19 @@
 <!doctype html>
 <html>
 <head>
-<style>
-*{ margin:0; padding:0; font-family:Arial, Helvetica, sans-serif,"宋体"; font-size:12px;}
-li{ list-style:none;}
-img{border:none 0;}
-body{ background-image:url(images/bg.png);}
-/*header*/
-.header{overflow:hidden;}
-.headerbox{ width:980px; margin:10px auto; }
-.logo{ float:left; display:block; margin-right:80px;}
-.phone{overflow:hidden; padding-top:10px; float:left;}
-.phone img{ float:left; display:block;}
-.phone p{ float:left; margin-left:5px; font-size:14px; font-family:"微软雅黑"; color:#a1653a;}
-.header_rt{ float:right; color:#8a8a8a;}
-.header_rt a{color:#626262; margin:0 10px; line-height:50px;}
-/*nav*/
-.nav { background-color:#d79e6d; margin-top:10px;}
-.navbox{width:980px; margin:0 auto; }
-.navbox li{ float:left; margin:0 20px; line-height:48px;}
-.navbox a{font-family:"微软雅黑";font-size:14px;color:white;}
-.nav .product{color:#804d1f;}
-.navbox a:hover{color:#804d1f; text-decoration:none;}
-/*mainbox*/
-.mainbox{ width:980px; margin:15px auto; overflow:hidden;}
-/*left*/
-.mainbox_lf{ float:left; background-color:white; border:1px solid #e6e6e6; width:230px; padding:20px;}
-.title_lf{ overflow:hidden; margin-top:0; margin-bottom:0;}
-.title_lf img{ float:left; display:block;}
-.title_lf div{ float:left; font-family:"微软雅黑"; font-size:22px; color:#e0a873; margin-left:15px; margin-top:5px; position:relative;}
-.title_lf span{ font-size:10px; position:absolute; left:0; top:24px;}
-.mainbox_lf h2{ font-family:"微软雅黑"; font-size:16px; line-height:22px;}
-.mainbox_lf a{ background-color:#e6e6e6; display:inline-block; line-height:28px; width:190px; text-align:center; margin-bottom:10px; color:#555; font-family:"微软雅黑"; font-size:14px;}
-.mainbox_lf .active{ background-color:#e0a873; color:white;}
-/*right*/
-.mainbox_rt{ float:right; width:740px;}
-/*top*/
-.rt_top{ overflow:hidden; padding:20px; background-color:white; border:1px solid #e6e6e6;}
-.rt_top img{ float:left; display:block;}
-.main_top{ float:left;}
-.main_top h3{ font-size:16px; font-weight:bold; color:#555; font-family:"微软雅黑"; }
-.main_top h3 span{ font-size:16px; font-weight:bold; color:#e0a873; font-family:"微软雅黑";}
-.table_top{ overflow:hidden;}
-.table_top ul{ float:left; margin-right:50px;}
-.table_top li{ line-height:22px; color:#555;}
-.top_bt{ overflow:hidden; margin-top:10px; margin-left:30px;}
-.top_bt li{ float:left; background-color:#e0a873; width:140px; margin-right:20px;}
-.top_bt img{ margin:6px 10px;}
-.top_bt a{ font-size:18px; font-family:"微软雅黑"; font-weight:bold; color:white; line-height:43px;}
-/*bottom*/
-.rt_bottom{ overflow:hidden; padding:20px; background-color:white; border:1px solid #e6e6e6; margin-top:15px;}
-.rt_bottom h2{ margin-top:0; margin-bottom:0; font-family:"微软雅黑"; line-height:28px; font-size:16px;}
-.worth{ float:left; width:470px;}
-.worth_tl{ overflow:hidden;}
-.worth_tl h2{ float:left; margin-right:20px; cursor:pointer; font-weight:bold;}
-.worth_hi{ overflow:hidden;}
-.worth_hi ul{ overflow:hidden; margin-bottom:0;}
-.worth_hi li{ float:left; width:100px; text-align:center; line-height:32px;}
-.background{ background-color:#f5f5f5;}
-.history{ float:right; width:200px; color:#555;}
-.history h2{ font-weight:bold; padding-left:15px;}
-.history dt{ padding-left:15px; line-height:30px;}
-.red{ color:#e0a873;}
-.history dd{ line-height:30px; border-bottom:1px solid #ddd;}
-.history b{ float:right;}
-/*footer*/
-.footer{ background-color:white;}
-.footerbox{ width:980px; margin:0 auto;color:#636363; text-align:center;}
-.footerbox ul{ overflow:hidden; margin-left:300px; padding-top:15px;}
-.footerbox li{ float:left;}
-.footerbox a{color:#626262; margin:0 5px;}
-.footerbox div{ padding-bottom:10px;}
-</style>
-<script src="JS/jquery.js"></script>
-<script>
-$(function(){
-	var n=0;
-	$(".worth_tl h2").click(function(){
-		$(".worth_tl h2").removeClass("bold");
-		$(this).addClass("bold");
-		n=$(".worth_tl h2").index(this);
-		$(".worth_hi").addClass("hid");
-		$(".worth_hi").eq(n).removeClass("hid");	
-		});	
-})
-</script>
-<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
 <meta charset="utf-8">
-<title>产品服务-易如付</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>首页-沣润金服</title>
+<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+<link href="css/main.css" rel="stylesheet" type="text/css">
+<script src="js/jquery.js"></script>
+<script src="js/main.js"></script>
 </head>
 
 <body>
-<div class="header">
-	<div class="headerbox">
-        <a class="logo" href="#"><img src="images/logo.png"></a>
-        <div class="phone">
-        	<img src="images/phone.png">
-            <p>客服热线<br></p>
-        </div>
-        <div class="header_rt">
-            <a href="#">收藏网站</a>|
-            <a href="#">设为主页</a>
-        </div>
-	</div>
-</div>
-<div class="nav">
-    <ul class="navbox">
-        <li><a class="index" href="index.html">首页</a></li>
-        <li><a class="product" href="product.html">基金产品</a></li>	
-        <li><a class="online" href="">网上交易</a></li>	
-        <li><a class="finance" href="finance.html">专户理财</a></li>
-        <li><a class="service" href="service.html">客户服务</a></li>
-        <li><a class="info" href="info.html">资讯中心</a></li>
-        <li><a class="about" href="about.html">走进易如基金</a></li>		
-    </ul>
-</div>
+<script type="text/javascript" src="js/header.js"></script>
+
 <div class="mainbox">
 	<div class="mainbox_lf">
     	<h1 class="title_lf">
@@ -229,19 +128,7 @@ $(function(){
         </div>
     </div>
 </div>
-<div class="footer">
-	<div class="footerbox">
-        <ul>
-        	<li><a href="ZP.html">诚聘英才</a>|</li>
-            <li><a href="contact.html">联系我们</a>|</li>
-            <li><a href="tip.html">风险提示</a>|</li>
-            <li><a href="safe.html">安全提示</a>|</li>
-            <li><a href="clause.html">免责条款</a>|</li>
-            <li><a href="law.html">法律法规</a></li>
-        </ul>
-        <div>Copyright © 2006-2013 YIRU.com All rights reserved</div>
-        <div>北京易如投资管理有限公司版权所有</div>
-    </div>
-</div>
+<script type="text/javascript" src="js/footer.js"></script>
+
 </body>
 </html>

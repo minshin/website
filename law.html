@@ -1,87 +1,19 @@
 <!doctype html>
 <html>
 <head>
-<style>
-*{ margin:0; padding:0; font-family:Arial, Helvetica, sans-serif,"宋体"; font-size:12px;}
-li{ list-style:none;}
-img{border:none 0;}
-body{ background-image:url(images/bg.png);}
-/*header*/
-.header{overflow:hidden;}
-.headerbox{ width:980px; margin:10px auto; }
-.logo{ float:left; display:block; margin-right:80px;}
-.phone{overflow:hidden; padding-top:10px; float:left;}
-.phone img{ float:left; display:block;}
-.phone p{ float:left; margin-left:5px; font-size:14px; font-family:"微软雅黑"; color:#a1653a;}
-.header_rt{ float:right; color:#8a8a8a;}
-.header_rt a{color:#626262; margin:0 10px; line-height:50px;}
-/*nav*/
-.nav { background-color:#d79e6d; margin-top:10px;}
-.navbox{width:980px; margin:0 auto; }
-.navbox li{ float:left; margin:0 20px; line-height:48px;}
-.navbox a{font-family:"微软雅黑";font-size:14px;color:white;}
-.navbox a:hover{color:#804d1f; text-decoration:none;}
-/*mainbox*/
-.mainbox{ width:980px; margin:15px auto; overflow:hidden;}
-.add{ color:#999;}
-.add a{ color:#999;}
-/*right*/
-.mainbox_rt{ background-color:white; border:1px solid #e6e6e6; padding:20px; height:680px;}
-.mainbox_rt h3{ font-family:"微软雅黑"; font-size:22px; color:#555; margin:0; border-bottom:2px solid #e0a873;}
-.mainbox_rt h3 img{ margin-right:10px;}
-.mainbox_rt p{ text-indent:24px; margin-top:10px;}
-.map{ margin-top:20px;}
-/*footer*/
-.footer{ background-color:white;}
-.footerbox{ width:980px; margin:0 auto;color:#636363; text-align:center;}
-.footerbox ul{ overflow:hidden; margin-left:300px; padding-top:15px;}
-.footerbox li{ float:left;}
-.footerbox a{color:#626262; margin:0 5px;}
-.footerbox div{ padding-bottom:10px;}
-</style>
-<script src="JS/jquery.js"></script>
-<script>
-$(function(){
-	var n=0;
-	$(".worth_tl h2").click(function(){
-		$(".worth_tl h2").removeClass("bold");
-		$(this).addClass("bold");
-		n=$(".worth_tl h2").index(this);
-		$(".worth_hi").addClass("hid");
-		$(".worth_hi").eq(n).removeClass("hid");	
-		});	
-})
-</script>
-<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
 <meta charset="utf-8">
-<title>产品服务-易如付</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>首页-沣润金服</title>
+<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+<link href="css/main.css" rel="stylesheet" type="text/css">
+<script src="js/jquery.js"></script>
+<script src="js/main.js"></script>
 </head>
 
 <body>
-<div class="header">
-	<div class="headerbox">
-        <a class="logo" href="#"><img src="images/logo.png"></a>
-        <div class="phone">
-        	<img src="images/phone.png">
-            <p>客服热线<br></p>
-        </div>
-        <div class="header_rt">
-            <a href="#">收藏网站</a>|
-            <a href="#">设为主页</a>
-        </div>
-	</div>
-</div>
-<div class="nav">
-    <ul class="navbox">
-        <li><a class="index" href="index.html">首页</a></li>
-        <li><a class="product" href="product.html">基金产品</a></li>	
-        <li><a class="online" href="">网上交易</a></li>	
-        <li><a class="finance" href="finance.html">专户理财</a></li>
-        <li><a class="service" href="service.html">客户服务</a></li>
-        <li><a class="info" href="info.html">资讯中心</a></li>
-        <li><a class="about" href="about.html">走进易如基金</a></li>		
-    </ul>
-</div>
+<script type="text/javascript" src="js/header.js"></script>
+
 <div class="mainbox">
 	<p class="add">当前位置:&nbsp;<a href="index.html">首页</a>&nbsp;>&nbsp;法律法规</p>
     <div class="mainbox_rt">
@@ -91,7 +23,7 @@ $(function(){
         </h3>
         <p>网上交易业务规则</p>
         <p>第一章 总则</p>
-        <p>第1条 易如投资基金管理有限公司（以下简称"本公司"）为规范投资者通过互联网对本公司所管理的开放式基金进行的交易行为（以下简称“网上交易”），根据《中华人民共和国证券投资基金法》及其它相关法律法规及本公司有关业务的规定，特制定《北京易如投资管理有限公司开放式基金网上交易业务规则》（以下简称"本规则"）。网上交易所涉及的本公司、投资者及其他有关机构皆应遵守本规则。</p>
+        <p>第1条 沣润投资基金管理有限公司（以下简称"本公司"）为规范投资者通过互联网对本公司所管理的开放式基金进行的交易行为（以下简称“网上交易”），根据《中华人民共和国证券投资基金法》及其它相关法律法规及本公司有关业务的规定，特制定《北京沣润投资管理有限公司开放式基金网上交易业务规则》（以下简称"本规则"）。网上交易所涉及的本公司、投资者及其他有关机构皆应遵守本规则。</p>
         <p>第2条 定义
 　　 "投资者"指从事本公司网上交易的直销投资者。 
 　　 "网上交易"是指投资者通过本公司网上交易系统从事账户管理或基金交易的行为。网上交易的内容包括账户开立、客户资料修改、交易密码修改、分红方式修改、提交认购、申购、赎回、转换、撤销基金交易申请和交易记录查询等业务。
@@ -101,8 +33,8 @@ $(function(){
         <p>第3条 凡从事网上交易的投资者必须与本公司达成网上交易的相关协议，同意本公司有关服务条款。投资者可通过网上签约或到本公司指定地点签约两种方式，与本公司签署基金网上交易相关协议。本规则及网上交易相关协议和业务指南构成本公司基金网上交易的要约。无论投资者采取何种方式签约，一旦投资者从事网上交易，即视为投资者对本公司制定的相关协议条款及本规则、交易指南的接受和认可。</p>
         <p>第4条 目前本公司仅对个人投资者开通网上交易。</p>
         <p>第二章 基金账户和交易账户的开立</p>
-        <p>第5条 投资者进行网上交易需先开立易如投资基金管理有限责任公司的基金账户。投资者可通过各销售机构、华商基金直销柜台或本公司网上交易系统开立基金账户。开立基金账户时，需接受本公司或本公司指定网点或机构以本公司认可的方式进行身份验证。</p>
-        <p>第6条 投资者已在代销机构开立易如投资基金账户，如需开通网上直销交易，需事先通过网上直销系统或直销中心柜台进行易如投资基金账户登记增开交易账户；投资者已在直销中心柜台开立易如投资基金账户，则可直接通过网上系统办理交易。</p>
+        <p>第5条 投资者进行网上交易需先开立沣润投资基金管理有限责任公司的基金账户。投资者可通过各销售机构、华商基金直销柜台或本公司网上交易系统开立基金账户。开立基金账户时，需接受本公司或本公司指定网点或机构以本公司认可的方式进行身份验证。</p>
+        <p>第6条 投资者已在代销机构开立沣润投资基金账户，如需开通网上直销交易，需事先通过网上直销系统或直销中心柜台进行沣润投资基金账户登记增开交易账户；投资者已在直销中心柜台开立沣润投资基金账户，则可直接通过网上系统办理交易。</p>
         <p>第7条 投资者通过网上开户时，在账户资料中预留的资金账号须为指定银行卡卡号，且网上开户使用的身份证件号码应与开立指定银行卡时预留银行的证件号码一致，方可通过指定银行卡的支付系统划付购买基金款项。</p>
         <p>第8条 投资者可以当天开户（基金账户和直销交易账户）、当天开通网上交易、当天办理认购、申购、账户资料修改等业务，交易时间按照本规则的相关规定执行。</p>
         <p>第三章 网上交易的开通与取消</p>
@@ -114,7 +46,7 @@ $(function(){
         <p>第12条 投资者的交易密码可以通过网上交易系统进行变更，也可通过本公司的直销中心进行变更，密码变更实时生效。</p>
         <p>第13条 投资者应妥善保管交易密码以防泄漏。由于投资者的原因导致密码泄露而引起的损失由投资者承担。</p>
         <p>第14条 投资者如遗忘密码，须按照网上交易系统中交易密码重置的说明及要求，通过网上交易系统自助重置或通过本公司直销中心柜台办理密码重置手续。</p>
-        <p>第15条 为了保障投资者的交易安全，交易密码位数需设定在6-16位，不能含有空格。如果投资者还通过易如投资基金直销中心柜台办理基金交易，请将交易密码设为6位数字。</p>
+        <p>第15条 为了保障投资者的交易安全，交易密码位数需设定在6-16位，不能含有空格。如果投资者还通过沣润投资基金直销中心柜台办理基金交易，请将交易密码设为6位数字。</p>
         <p>第六章 认购、申购、定期定额申购、赎回与基金转换</p>
         <p>第16条 投资者可按照基金合同、基金招募说明书和服务协议的相关规定，通过网上交易系统提出基金份额的认购、申购、定期定额申购、赎回和转换申请。</p>
         <p>第七章 交易撤单</p>
@@ -150,19 +82,7 @@ $(function(){
         <p>第40条 本公司保留本规则的解释权，并有权根据实际情况对本规则作合理修改。任何修改应自该修改发布之时生效。</p>
     </div>
 </div>
-<div class="footer">
-	<div class="footerbox">
-        <ul>
-        	<li><a href="ZP.html">诚聘英才</a>|</li>
-            <li><a href="contact.html">联系我们</a>|</li>
-            <li><a href="tip.html">风险提示</a>|</li>
-            <li><a href="safe.html">安全提示</a>|</li>
-            <li><a href="clause.html">免责条款</a>|</li>
-            <li><a href="law.html">法律法规</a></li>
-        </ul>
-        <div>Copyright © 2006-2013 YIRU.com All rights reserved</div>
-        <div>北京易如投资管理有限公司版权所有</div>
-    </div>
-</div>
+<script type="text/javascript" src="js/footer.js"></script>
+
 </body>
 </html>

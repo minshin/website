@@ -1,127 +1,42 @@
 <!doctype html>
 <html>
 <head>
-<style>
-*{ margin:0; padding:0; font-family:Arial, Helvetica, sans-serif,"宋体"; font-size:12px;}
-li{ list-style:none;}
-img{border:none 0;}
-body{ background-image:url(images/bg.png);}
-/*header*/
-.header{overflow:hidden;}
-.headerbox{ width:980px; margin:10px auto; }
-.logo{ float:left; display:block; margin-right:80px;}
-.phone{overflow:hidden; padding-top:10px; float:left;}
-.phone img{ float:left; display:block;}
-.phone p{ float:left; margin-left:5px; font-size:14px; font-family:"微软雅黑"; color:#a1653a;}
-.header_rt{ float:right; color:#8a8a8a;}
-.header_rt a{color:#626262; margin:0 10px; line-height:50px;}
-/*nav*/
-.nav { background-color:#d79e6d; margin-top:10px;}
-.navbox{width:980px; margin:0 auto; }
-.navbox li{ float:left; margin:0 20px; line-height:48px;}
-.navbox a{font-family:"微软雅黑";font-size:14px;color:white;}
-.nav .info{color:#804d1f;}
-.navbox a:hover{color:#804d1f; text-decoration:none;}
-/*mainbox*/
-.mainbox{ width:980px; margin:15px auto; overflow:hidden;}
-.add{ color:#999;}
-.add a{ color:#999;}
-/*right*/
-.mainbox_rt{ background-color:white; border:1px solid #e6e6e6; padding:20px; margin-bottom:15px;}
-.mainbox_rt h3{ font-family:"微软雅黑"; font-size:22px; color:#555; margin:0;}
-.mainbox_rt h3 img{ margin-right:10px;}
-.mainbox_rt p{ text-indent:24px; margin-top:10px;}
-.map{ margin-top:20px;}
-.mainbox_rt ul{ margin-top:20px;}
-.mainbox_rt li{ overflow:hidden; background-image:url(images/arrow.png); background-repeat:no-repeat; background-position:left center; padding-left:10px; line-height:34px;}
-.mainbox_rt span{ float:right;}
-.mainbox_rt a{ color:#555;}
-/*footer*/
-.footer{ background-color:white;}
-.footerbox{ width:980px; margin:0 auto;color:#636363; text-align:center;}
-.footerbox ul{ overflow:hidden; margin-left:300px; padding-top:15px;}
-.footerbox li{ float:left;}
-.footerbox a{color:#626262; margin:0 5px;}
-.footerbox div{ padding-bottom:10px;}
-</style>
-<script src="JS/jquery.js"></script>
-<script>
-$(function(){
-	var n=0;
-	$(".worth_tl h2").click(function(){
-		$(".worth_tl h2").removeClass("bold");
-		$(this).addClass("bold");
-		n=$(".worth_tl h2").index(this);
-		$(".worth_hi").addClass("hid");
-		$(".worth_hi").eq(n).removeClass("hid");	
-		});	
-})
-</script>
-<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
 <meta charset="utf-8">
-<title>资讯中心-易如投资</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>首页-沣润金服</title>
+<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+<link href="css/main.css" rel="stylesheet" type="text/css">
+<script src="js/jquery.js"></script>
+<script src="js/main.js"></script>
 </head>
 
 <body>
-<div class="header">
-	<div class="headerbox">
-        <a class="logo" href="#"><img src="images/logo.png"></a>
-        <div class="phone">
-        	<img src="images/phone.png">
-            <p>客服热线<br></p>
-        </div>
-        <div class="header_rt">
-            <a href="#">收藏网站</a>|
-            <a href="#">设为主页</a>
-        </div>
-	</div>
-</div>
-<div class="nav">
-    <ul class="navbox">
-        <li><a class="index" href="index.html">首页</a></li>
-        <li><a class="product" href="product.html">基金产品</a></li>	
-        <li><a class="online" href="">网上交易</a></li>	
-        <li><a class="finance" href="finance.html">专户理财</a></li>
-        <li><a class="service" href="service.html">客户服务</a></li>
-        <li><a class="info" href="info.html">资讯中心</a></li>
-        <li><a class="about" href="about.html">走进易如基金</a></li>		
-    </ul>
-</div>
+<script type="text/javascript" src="js/header.js"></script>
+
 <div class="mainbox">
-	<p class="add">当前位置:&nbsp;<a href="index.html">首页</a>&nbsp;>&nbsp;<a href="info.html">资讯中心</a>&nbsp;>&nbsp;资讯&nbsp;>&nbsp;聚焦易如</p>
+	<p class="add">当前位置:&nbsp;<a href="index.html">首页</a>&nbsp;>&nbsp;<a href="info.html">资讯中心</a>&nbsp;>&nbsp;资讯&nbsp;>&nbsp;聚焦沣润</p>
     <div class="mainbox_rt" style="height:360px;">
-        <p style="text-align:center; font-size:14px; font-weight:bold;">易如基金：债市慢牛行情或将延续</p>
+        <p style="text-align:center; font-size:14px; font-weight:bold;">沣润基金：债市慢牛行情或将延续</p>
         <p style="text-align:center;">时间：2014-09-09 来源：【中国基金网】 </p>
-        <p>易如基金日前发布公告，易如双债添利债券型基金于9月1日-9月19日正式发行。据悉，该基金是一只二级混合型债券基金，主要投资于债券市场，在严控投资风险的基础上，谨慎参与股票市场投资来提高投资收益。在此期间，投资者可通过民生银行、东北证券等银行、券商渠道及易如基金直销柜台、网上交易系统进行认购。</p>
+        <p>沣润基金日前发布公告，沣润双债添利债券型基金于9月1日-9月19日正式发行。据悉，该基金是一只二级混合型债券基金，主要投资于债券市场，在严控投资风险的基础上，谨慎参与股票市场投资来提高投资收益。在此期间，投资者可通过民生银行、东北证券等银行、券商渠道及沣润基金直销柜台、网上交易系统进行认购。</p>
          <p>今年以来，债券市场在经济下滑、资金宽松和整治非标产品等多种因素的综合影响下，收益率经历了明显的下行，走出一波牛市行情，债券类基金整体表现抢眼。银河证券基金研究中心数据显示，今年以来截至8月28日，纳入统计的93只普通债券型基金（二级A类）平均净值增长率为7.87%，56只普通债券型基金（二级B/C类）平均净值增长率为7.87%。</p>
-          <p>易如基金分析认为，目前中国的利率水平偏低，而随着利率市场化深入进行，这将导致利率逐步上行，债券收益也将跟随提高。与此同时，考虑到经济短期内还难以全面企稳改善，货币政策还有进一步宽松空间，而且目前债券收益率水平还处在历史相对高位，未来债券市场的慢牛行情或将持续。从券种来看，未来上涨主力品种可能从前期中长期利率品种向信用债切换，信用债有望接力牛市下半场。</p>
-           <p>据了解，易如双债添利债券主要以企业债、公司债、短融等AA+、AA级信用债券投资为基础，并结合市场行情通过可转债投资增厚收益。在投资策略上，该基金将根据债市、股市行情的变化，通过大类资产配置和债券久期调整，严控风险的同时动态把握不同市场的投资机会，实现基金资产长期、稳定的投资回报。</p>
+          <p>沣润基金分析认为，目前中国的利率水平偏低，而随着利率市场化深入进行，这将导致利率逐步上行，债券收益也将跟随提高。与此同时，考虑到经济短期内还难以全面企稳改善，货币政策还有进一步宽松空间，而且目前债券收益率水平还处在历史相对高位，未来债券市场的慢牛行情或将持续。从券种来看，未来上涨主力品种可能从前期中长期利率品种向信用债切换，信用债有望接力牛市下半场。</p>
+           <p>据了解，沣润双债添利债券主要以企业债、公司债、短融等AA+、AA级信用债券投资为基础，并结合市场行情通过可转债投资增厚收益。在投资策略上，该基金将根据债市、股市行情的变化，通过大类资产配置和债券久期调整，严控风险的同时动态把握不同市场的投资机会，实现基金资产长期、稳定的投资回报。</p>
     </div>
       <div class="mainbox_rt">
     	<h3>相关内容</h3>
         <ul>
             	<li><a href="info2.html">金融深化正当其时——评张育军先生的《金融危机与改革》</a><span>[2014-11-10]</span></li>
                 <li><a href="info3.html">小“药铺”里有“人参”</a><span>[2014-11-03]</span></li>
-                <li><a href="info4.html">易如基金：债市慢牛行情或将延续</a><span>[2014-10-27]</span></li>
-                <li><a href="info5.html">易如双债添利债券基金9月1日正式发行</a><span>[2014-10-27]</span></li>
-                <li><a href="info6.html">农行新发售易如新兴成长混合基金上市</a><span>[2014-10-03]</span></li>
+                <li><a href="info4.html">沣润基金：债市慢牛行情或将延续</a><span>[2014-10-27]</span></li>
+                <li><a href="info5.html">沣润双债添利债券基金9月1日正式发行</a><span>[2014-10-27]</span></li>
+                <li><a href="info6.html">农行新发售沣润新兴成长混合基金上市</a><span>[2014-10-03]</span></li>
                 <li style="background-image:none; text-align:right;"><a style="font-weight:bold; color:red;" href="info-more1.html">更多>></a></li>
             </ul>
     </div>
 </div>
-<div class="footer">
-	<div class="footerbox">
-        <ul>
-        	<li><a href="ZP.html">诚聘英才</a>|</li>
-            <li><a href="contact.html">联系我们</a>|</li>
-            <li><a href="tip.html">风险提示</a>|</li>
-            <li><a href="safe.html">安全提示</a>|</li>
-            <li><a href="clause.html">免责条款</a>|</li>
-            <li><a href="law.html">法律法规</a></li>
-        </ul>
-        <div>Copyright © 2006-2013 YIRU.com All rights reserved</div>
-        <div>北京易如投资管理有限公司版权所有</div>
-    </div>
-</div>
+<script type="text/javascript" src="js/footer.js"></script>
+
 </body>
 </html>
