@@ -1,0 +1,114 @@
+<!doctype html>
+<html>
+<head>
+<style>
+*{ margin:0; padding:0; font-family:Arial, Helvetica, sans-serif,"宋体"; font-size:12px;}
+li{ list-style:none;}
+img{border:none 0;}
+body{ background-image:url(images/bg.png);}
+/*header*/
+.header{overflow:hidden;}
+.headerbox{ width:980px; margin:10px auto; }
+.logo{ float:left; display:block; margin-right:80px;}
+.phone{overflow:hidden; padding-top:10px; float:left;}
+.phone img{ float:left; display:block;}
+.phone p{ float:left; margin-left:5px; font-size:14px; font-family:"微软雅黑"; color:#a1653a;}
+.header_rt{ float:right; color:#8a8a8a;}
+.header_rt a{color:#626262; margin:0 10px; line-height:50px;}
+/*nav*/
+.nav { background-color:#d79e6d; margin-top:10px;}
+.navbox{width:980px; margin:0 auto; }
+.navbox li{ float:left; margin:0 20px; line-height:48px;}
+.navbox a{font-family:"微软雅黑";font-size:14px;color:white;}
+.nav .service{color:#804d1f;}
+.navbox a:hover{color:#804d1f; text-decoration:none;}
+/*mainbox*/
+.mainbox{ width:980px; margin:15px auto; overflow:hidden;}
+.add{ color:#999;}
+.add a{ color:#999;}
+/*right*/
+.mainbox_rt{ background-color:white; border:1px solid #e6e6e6; padding:20px; margin-bottom:15px; height:660px;}
+.mainbox_rt h3{ font-family:"微软雅黑"; font-size:22px; color:#555; margin:0;}
+.mainbox_rt h3 img{ margin-right:10px;}
+.mainbox_rt p{ text-indent:24px; margin-top:10px;}
+.map{ margin-top:20px;}
+.mainbox_rt a{ color:#555;}
+/*footer*/
+.footer{ background-color:white;}
+.footerbox{ width:980px; margin:0 auto;color:#636363; text-align:center;}
+.footerbox ul{ overflow:hidden; margin-left:300px; padding-top:15px;}
+.footerbox li{ float:left;}
+.footerbox a{color:#626262; margin:0 5px;}
+.footerbox div{ padding-bottom:10px;}
+</style>
+<script src="JS/jquery.js"></script>
+<script>
+$(function(){
+	var n=0;
+	$(".worth_tl h2").click(function(){
+		$(".worth_tl h2").removeClass("bold");
+		$(this).addClass("bold");
+		n=$(".worth_tl h2").index(this);
+		$(".worth_hi").addClass("hid");
+		$(".worth_hi").eq(n).removeClass("hid");	
+		});	
+})
+</script>
+<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+<meta charset="utf-8">
+<title>客户服务-易如投资</title>
+</head>
+
+<body>
+<div class="header">
+	<div class="headerbox">
+        <a class="logo" href="#"><img src="images/logo.png"></a>
+        <div class="phone">
+        	<img src="images/phone.png">
+            <p>客服热线<br></p>
+        </div>
+        <div class="header_rt">
+            <a href="#">收藏网站</a>|
+            <a href="#">设为主页</a>
+        </div>
+	</div>
+</div>
+<div class="nav">
+    <ul class="navbox">
+        <li><a class="index" href="index.html">首页</a></li>
+        <li><a class="product" href="product.html">基金产品</a></li>	
+        <li><a class="online" href="">网上交易</a></li>	
+        <li><a class="finance" href="finance.html">专户理财</a></li>
+        <li><a class="service" href="service.html">客户服务</a></li>
+        <li><a class="info" href="info.html">资讯中心</a></li>
+        <li><a class="about" href="about.html">走进易如基金</a></li>		
+    </ul>
+</div>
+<div class="mainbox">
+	<p class="add">当前位置:&nbsp;<a href="index.html">首页</a>&nbsp;>&nbsp;<a href="service.html">客户服务</a>&nbsp;>&nbsp;投资者教育</p>
+    <div class="mainbox_rt">
+        <p style="text-align:center; font-size:14px; font-weight:bold;">易如基金陈振宇：动物精神、经济预测与投资</p>
+        <p style="text-align:center;">时间：2014-10-20 来源：【上海证券报】</p>
+        <p>格林斯潘作为前任美国联邦储备委员会主席，1987——2006年执掌美国金融大权18年半，任期跨越6届美国总统。在其任上，他的一举一动备受世人瞩目，他的决策甚至只言片语常常引起世界金融市场的剧烈波动。自从卸任后，他逐步淡出人们的视线。进入退休生活的他，以一个旁观者的身份，观察了08年金融海啸的发生，面对金融危机对世界的巨大冲击，面对人们质疑他主政时期实行的各种政策，他开始了广泛的数据收集、分析和思考。《动荡的世界》是他交给世人的答案，或许并不完善，但我们可以看到一位权倾一时且具有丰富金融管理经验的智者的思考。</p>
+         <p>本书开篇就把凯恩斯最早提出的动物精神作为分析的起点，值得让人深思。这个知名术语在阿克洛夫和希勒所著的《动物精神》出版后更为世人所知。在这里动物精神是用以描述“一种自发的行动本能，同时这种行动也不是对加权收益值和成功概率的理性判断的结果”。理解了这个概念，证券市场里很多让理性投资者困惑的现象就很好理解了。理性投资者根据所管理资金的性质、风险偏好，深入分析投资标的的基本面，结合流动性管理，小心谨慎的利用投资人群的动物精神，将可获得惊人的投资回报。反之，如果不能很好的理解和利用这个现象，则有可能陷入不断的抱怨和怀才不遇的哀叹中。</p>
+          <p>格林斯潘把动物精神的定义有所扩展，我们的理解就是人类非理性行为。其实对此问题的研究由来已久，特别是自法国社会学家古斯塔夫·勒庞作了群体心理学开山之作《乌合之众》后，社会科学对人类的群体非理性行为研究逐步深入，到近代行为经济学的诞生，更是对传统经济学的极大补充，甚至有人认为是对传统经济学的颠覆。格林斯潘并不是学院派经济学家，他无意对经济学理论本身进行深入探讨，而是对学以致用更感兴趣，这也正是我们所关心的。由于动物精神和群体非理性的存在，大大增加了本来就很难的经济预测工作的不确定性，格林斯潘举了自己在1959年作为年轻经济学家的一次预测的例子，他在《财富》杂志中撰文称：对于投资者的“过于乐观”感到担忧，但后来发现，其实距离大牛市的顶峰还差的很远。在经过08年之后6年的反思和研究，他认为动物精神看似随机，但那么多看似随机的变量能够被统计上高度显著的回归方程所解释，因此在经济预测模型中应该逐步加入反映人性的量化指标。当然，这个路还很长！</p>
+           <p>回到投资，股票价格与财产刺激，投资中为何市场失灵等问题，书中都做了阐述。格老终于明白了“股票价格不仅是商业活动的领先指标，还是促使其变化的主要成因之一”。不过这个道理多年前金融大鳄索罗斯就从他的投资实践和哲学研究中领悟了，并大赚其钱。如果克强总理充分认识到这一点，在目前经济转型的关键节点上，充分利用A股的积极作用，则是我们证券金融业之大幸，也必然惠及各行各业和整个国民经济。</p>
+            <p>我们易如基金投资团队，充分理解金融市场的动荡与机会，正是基于对经济预测复杂性的认识，我们强调“理念一致，风格多样”的原则，充分发挥权益、固定收益和量化投资的团队协同作战能力，在宏观分析、量化选股、行业公司实地调研、产业链研究以及金融行为分析的基础上，最大程度发挥基金经理的投资才能，致力于为基金持有人谋取长期最优回报。</p>
+    </div>
+</div>
+<div class="footer">
+	<div class="footerbox">
+        <ul>
+        	<li><a href="ZP.html">诚聘英才</a>|</li>
+            <li><a href="contact.html">联系我们</a>|</li>
+            <li><a href="tip.html">风险提示</a>|</li>
+            <li><a href="safe.html">安全提示</a>|</li>
+            <li><a href="clause.html">免责条款</a>|</li>
+            <li><a href="law.html">法律法规</a></li>
+        </ul>
+        <div>Copyright © 2006-2013 YIRU.com All rights reserved</div>
+        <div>北京易如投资管理有限公司版权所有</div>
+    </div>
+</div>
+</body>
+</html>

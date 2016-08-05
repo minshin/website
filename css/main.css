@@ -1,0 +1,80 @@
+*{ margin:0; padding:0; 
+	font-family: Pingfang SC, Lantinghei SC,Open Sans,Arial,Hiragino Sans GB,Microsoft YaHei,微软雅黑,STHeiti,WenQuanYi Micro Hei,SimSun,sans-serif,"宋体"; 
+	font-size:12px;}
+li{ list-style:none;}
+img{ border:none 0;}
+body{ background-image:url(images/bg.png);}
+/*header*/
+.header{ overflow:hidden;}
+.headerbox{ width:980px; margin:10px auto; }
+.logo{ float:left; display:block; margin-left:0px;}
+.phone{ overflow:hidden; padding-top:10px; float:left;}
+.phone img{ float:left; display:block;}
+.phone p{ float:left; margin-left:5px; font-size:14px; font-family:"微软雅黑"; color:#a1653a;}
+.header_rt{ float:right; color:#8a8a8a;height: 50px}
+.header_rt a{ color:#626262; margin:0px 10px; line-height:70px}
+/*nav*/
+.nav {background-color:#383A3F; margin-top:5px; width: 100%; height: 40px}
+.navbox{width:980px; margin:0 auto; }
+.navbox li{ float:left; margin:0 40px; line-height:40px;}
+.navbox a{
+	font-size:14px;color:white;
+	opacity: .7;
+	transition:opacity 0.2s ease 0s;
+	display: block;
+}
+.nav .index{color:#fff;}
+.navbox a:hover{color:#fff; opacity:1;  text-decoration:none;}
+/*bannerbox*/
+.bannerbox{position:relative;overflow:hidden;width:980px;height:250px;margin:0 auto;}
+.banner{left:0;top:0; margin: 0 auto;}
+.banner img{ float:left; }
+.Arrow a{position:absolute;width:30px;height:30px;top:120px; cursor:pointer;}
+.leftArrow{float:left;left:0;}
+.rightArrow{float:right;right:0;}
+.num ul{ overflow:hidden; position:absolute;bottom:2px;left:430px;}
+.num li{width:8px;height:8px; background-color:#999; float:left; margin-right:10px;}
+.num .blueLi{ background-color:#06C;}
+/*mainbox*/
+.mainbox{ width:980px; margin:15px auto; margin-bottom:50px;}
+/*mainbox_top*/
+.mainbox_top{ overflow:hidden;}
+.column{ width:300px; padding:20px; margin-left:15px; float:left; background-color:white;  border:1px solid #e6e6e6; overflow:hidden;}
+.login{ width:350px; padding:20px; float:left; background-color:white; border:1px solid #e6e6e6; overflow:hidden;}
+.login_F{ width:230px; border:1px solid #e6e6e6; }
+.login span{color:#999;}
+.login_M{ width:100px; border:1px solid #e6e6e6; }
+.login dl{ margin-bottom:0;}
+.login dd{ margin:6px auto;}
+.login_bt{ padding:5px 15px; background-color:#e0a873; color:white; font-size:14px; margin-left:100px; margin-top:0;}
+.column_title{ overflow:hidden; margin-top:0; margin-bottom:0;}
+.column_title img{ float:left; display:block;}
+.column_title div{ float:left;  font-size:22px; color:#555; margin-left:15px; margin-top:5px; position:relative;}
+.column_title span{ font-size:10px; position:absolute; left:0; top:24px;}
+.column p{ padding:0 20px; margin-top:10px; margin-bottom:0;}
+.column p a,.column li a{ font-size:16px; color:white;  line-height:60px; text-decoration:none;}
+.column .query1{ background-image:url(images/query1.png); background-repeat:no-repeat;}
+.column .query2{ background-image:url(images/query2.png); background-repeat:no-repeat;}
+.column ul{ float:left; margin-right:10px; margin-bottom:0;}
+.column li{ background-color:#e0a873; padding:0 10px; margin-top:10px;}
+.column li img{ margin-right:5px;}
+/*mainbox_bt*/
+.mainbox_bt{ background-color:white; width:980px; height:180px; margin-top:15px; border:1px solid #e6e6e6;}
+.mainbox_bt .title{ border-bottom:2px solid #d49b69; height:30px; overflow:hidden;}
+.mainbox_bt .title p{ float:left; padding:0 20px; line-height:30px; cursor:pointer;}
+.mainbox_bt .title_1{ background-color:#e0a873; color:white;}
+.mainbox_bt .main_1{ overflow:hidden;}
+.mainbox_bt .main_1 ul{ float:left; margin:15px; width:450px;}
+.mainbox_bt .main_1 li{ overflow:hidden; background-image:url(images/arrow.png); background-position:left center; background-repeat:no-repeat; padding-left:10px; line-height:22px;}
+.mainbox_bt .main_1 a{color:#333; float:left;}
+.mainbox_bt .main_1 a:hover{color:red;}
+.mainbox_bt .main_1 span{color:#666; float:right;}
+.mainbox_bt .hid{ display:none;}
+#main_2 ul{ width:940px;}
+/*footer*/
+.footer{ background-color:white;}
+.footerbox{ width:980px; margin:0 auto;color:#636363; text-align:center;}
+.footerbox ul{ overflow:hidden; margin-left:300px; padding-top:15px;}
+.footerbox li{ float:left;}
+.footerbox a{color:#626262; margin:0 5px;}
+.footerbox div{ padding-bottom:10px;}

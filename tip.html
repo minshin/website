@@ -1,0 +1,117 @@
+<!doctype html>
+<html>
+<head>
+<style>
+*{ margin:0; padding:0; font-family:Arial, Helvetica, sans-serif,"宋体"; font-size:12px;}
+li{ list-style:none;}
+img{border:none 0;}
+body{ background-image:url(images/bg.png);}
+/*header*/
+.header{overflow:hidden;}
+.headerbox{ width:980px; margin:10px auto; }
+.logo{ float:left; display:block; margin-right:80px;}
+.phone{overflow:hidden; padding-top:10px; float:left;}
+.phone img{ float:left; display:block;}
+.phone p{ float:left; margin-left:5px; font-size:14px; font-family:"微软雅黑"; color:#a1653a;}
+.header_rt{ float:right; color:#8a8a8a;}
+.header_rt a{color:#626262; margin:0 10px; line-height:50px;}
+/*nav*/
+.nav { background-color:#d79e6d; margin-top:10px;}
+.navbox{width:980px; margin:0 auto; }
+.navbox li{ float:left; margin:0 20px; line-height:48px;}
+.navbox a{font-family:"微软雅黑";font-size:14px;color:white;}
+.navbox a:hover{color:#804d1f; text-decoration:none;}
+/*mainbox*/
+.mainbox{ width:980px; margin:15px auto; overflow:hidden;}
+.add{ color:#999;}
+.add a{ color:#999;}
+/*right*/
+.mainbox_rt{ background-color:white; border:1px solid #e6e6e6; padding:20px; height:680px;}
+.mainbox_rt h3{ font-family:"微软雅黑"; font-size:22px; color:#555; margin:0; border-bottom:2px solid #e0a873;}
+.mainbox_rt h3 img{ margin-right:10px;}
+.mainbox_rt p{ text-indent:24px; margin-top:10px;}
+.map{ margin-top:20px;}
+/*footer*/
+.footer{ background-color:white;}
+.footerbox{ width:980px; margin:0 auto;color:#636363; text-align:center;}
+.footerbox ul{ overflow:hidden; margin-left:300px; padding-top:15px;}
+.footerbox li{ float:left;}
+.footerbox a{color:#626262; margin:0 5px;}
+.footerbox div{ padding-bottom:10px;}
+</style>
+<script src="JS/jquery.js"></script>
+<script>
+$(function(){
+	var n=0;
+	$(".worth_tl h2").click(function(){
+		$(".worth_tl h2").removeClass("bold");
+		$(this).addClass("bold");
+		n=$(".worth_tl h2").index(this);
+		$(".worth_hi").addClass("hid");
+		$(".worth_hi").eq(n).removeClass("hid");	
+		});	
+})
+</script>
+<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+<meta charset="utf-8">
+<title>风险提示-易如付</title>
+</head>
+
+<body>
+<div class="header">
+	<div class="headerbox">
+        <a class="logo" href="#"><img src="images/logo.png"></a>
+        <div class="phone">
+        	<img src="images/phone.png">
+            <p>客服热线<br></p>
+        </div>
+        <div class="header_rt">
+            <a href="#">收藏网站</a>|
+            <a href="#">设为主页</a>
+        </div>
+	</div>
+</div>
+<div class="nav">
+    <ul class="navbox">
+        <li><a class="index" href="index.html">首页</a></li>
+        <li><a class="product" href="product.html">基金产品</a></li>	
+        <li><a class="online" href="">网上交易</a></li>	
+        <li><a class="finance" href="finance.html">专户理财</a></li>
+        <li><a class="service" href="service.html">客户服务</a></li>
+        <li><a class="info" href="info.html">资讯中心</a></li>
+        <li><a class="about" href="about.html">走进易如基金</a></li>		
+    </ul>
+</div>
+<div class="mainbox">
+	<p class="add">当前位置:&nbsp;<a href="index.html">首页</a>&nbsp;>&nbsp;风险提示</p>
+    <div class="mainbox_rt">
+    	<h3>
+        	<img src="images/contact2.png">
+            风险提示
+        </h3>
+        <p>一、证券投资基金（以下简称“基金”）是一种长期投资工具，其主要功能是分散投资，降低投资单一证券所带来的个别风险。基金不同于银行储蓄和债券等能够提供固定收益预期的金融工具，投资人购买基金，既可能按其持有份额分享基金投资所产生的收益，也可能承担基金投资所带来的损失。</p>
+        <p>二、基金在投资运作过程中可能面临各种风险，既包括市场风险，也包括基金自身的管理风险、技术风险和合规风险等。巨额赎回风险是开放式基金所特有的一种风险，即当单个交易日基金的净赎回申请超过基金总份额的百分之十时，投资人将可能无法及时赎回持有的全部基金份额。</p>
+        <p>三、基金分为股票基金、混合基金、债券基金、货币市场基金等不同类型，投资人投资不同类型的基金将获得不同的收益预期，也将承担不同程度的风险。一般来说，基金的收益预期越高，投资人承担的风险也越大。</p>
+        <p>四、投资人应当认真阅读《基金合同》、《招募说明书》等基金法律文件，了解基金的风险收益特征，并根据自身的投资目的、投资期限、投资经验、资产状况等判断基金是否和投资人的风险承受能力相适应。</p>
+        <p>五、投资人应当充分了解基金定期定额投资和零存整取等储蓄方式的区别。定期定额投资是引导投资人进行长期投资、平均投资成本的一种简单易行的投资方式。但是定期定额投资并不能规避基金投资所固有的风险，不能保证投资人获得收益，也不是替代储蓄的等效理财方式。</p>
+        <p>六、易如基金管理有限责任公司所管理的基金由本公司依照有关法律法规及约定发起，并经中国证券监督管理委员会核准。中国证监会的核准并不代表中国证监会对该基金的风险和收益做出实质性判断、推荐或者保证。</p>
+        <p>七、基金管理人承诺以诚实信用、勤勉尽责的原则管理和运用基金资产，但不保证基金一定盈利，也不保证最低收益。基金管理人管理的基金的业绩不构成对其他基金业绩表现的保证。基金管理人提醒投资人基金投资的“买者自负”原则，在做出投资决策后，基金运营状况与基金净值变化引致的投资风险，由投资人自行负担。易如基金管理有限责任公司所管理的基金以1元初始面值募集，在市场波动等因素的影响下，基金投资仍有可能出现亏损或基金净值仍有可能低于初始面值。</p>
+        <p>八、易如基金管理有限责任公司所管理基金的《基金合同》和《招募说明书》已通过中国证监会指定报刊和本基金管理人的互联网网站进行了公开披露。投资人应当通过基金管理人或具有基金代销业务资格的其他机构购买和赎回基金，基金代销机构名单详见本公司各基金《招募说明书》以及相关公告。</p>
+    </div>
+</div>
+<div class="footer">
+	<div class="footerbox">
+        <ul>
+        	<li><a href="ZP.html">诚聘英才</a>|</li>
+            <li><a href="contact.html">联系我们</a>|</li>
+            <li><a href="tip.html">风险提示</a>|</li>
+            <li><a href="safe.html">安全提示</a>|</li>
+            <li><a href="clause.html">免责条款</a>|</li>
+            <li><a href="law.html">法律法规</a></li>
+        </ul>
+        <div>Copyright © 2006-2013 YIRU.com All rights reserved</div>
+        <div>北京易如投资管理有限公司版权所有</div>
+    </div>
+</div>
+</body>
+</html>

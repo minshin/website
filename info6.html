@@ -1,0 +1,127 @@
+<!doctype html>
+<html>
+<head>
+<style>
+*{ margin:0; padding:0; font-family:Arial, Helvetica, sans-serif,"宋体"; font-size:12px;}
+li{ list-style:none;}
+img{border:none 0;}
+body{ background-image:url(images/bg.png);}
+/*header*/
+.header{overflow:hidden;}
+.headerbox{ width:980px; margin:10px auto; }
+.logo{ float:left; display:block; margin-right:80px;}
+.phone{overflow:hidden; padding-top:10px; float:left;}
+.phone img{ float:left; display:block;}
+.phone p{ float:left; margin-left:5px; font-size:14px; font-family:"微软雅黑"; color:#a1653a;}
+.header_rt{ float:right; color:#8a8a8a;}
+.header_rt a{color:#626262; margin:0 10px; line-height:50px;}
+/*nav*/
+.nav { background-color:#d79e6d; margin-top:10px;}
+.navbox{width:980px; margin:0 auto; }
+.navbox li{ float:left; margin:0 20px; line-height:48px;}
+.navbox a{font-family:"微软雅黑";font-size:14px;color:white;}
+.nav .info{color:#804d1f;}
+.navbox a:hover{color:#804d1f; text-decoration:none;}
+/*mainbox*/
+.mainbox{ width:980px; margin:15px auto; overflow:hidden;}
+.add{ color:#999;}
+.add a{ color:#999;}
+/*right*/
+.mainbox_rt{ background-color:white; border:1px solid #e6e6e6; padding:20px; margin-bottom:15px;}
+.mainbox_rt h3{ font-family:"微软雅黑"; font-size:22px; color:#555; margin:0;}
+.mainbox_rt h3 img{ margin-right:10px;}
+.mainbox_rt p{ text-indent:24px; margin-top:10px;}
+.map{ margin-top:20px;}
+.mainbox_rt ul{ margin-top:20px;}
+.mainbox_rt li{ overflow:hidden; background-image:url(images/arrow.png); background-repeat:no-repeat; background-position:left center; padding-left:10px; line-height:34px;}
+.mainbox_rt span{ float:right;}
+.mainbox_rt a{ color:#555;}
+/*footer*/
+.footer{ background-color:white;}
+.footerbox{ width:980px; margin:0 auto;color:#636363; text-align:center;}
+.footerbox ul{ overflow:hidden; margin-left:300px; padding-top:15px;}
+.footerbox li{ float:left;}
+.footerbox a{color:#626262; margin:0 5px;}
+.footerbox div{ padding-bottom:10px;}
+</style>
+<script src="JS/jquery.js"></script>
+<script>
+$(function(){
+	var n=0;
+	$(".worth_tl h2").click(function(){
+		$(".worth_tl h2").removeClass("bold");
+		$(this).addClass("bold");
+		n=$(".worth_tl h2").index(this);
+		$(".worth_hi").addClass("hid");
+		$(".worth_hi").eq(n).removeClass("hid");	
+		});	
+})
+</script>
+<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+<meta charset="utf-8">
+<title>资讯中心-易如投资</title>
+</head>
+
+<body>
+<div class="header">
+	<div class="headerbox">
+        <a class="logo" href="#"><img src="images/logo.png"></a>
+        <div class="phone">
+        	<img src="images/phone.png">
+            <p>客服热线<br></p>
+        </div>
+        <div class="header_rt">
+            <a href="#">收藏网站</a>|
+            <a href="#">设为主页</a>
+        </div>
+	</div>
+</div>
+<div class="nav">
+    <ul class="navbox">
+        <li><a class="index" href="index.html">首页</a></li>
+        <li><a class="product" href="product.html">基金产品</a></li>	
+        <li><a class="online" href="">网上交易</a></li>	
+        <li><a class="finance" href="finance.html">专户理财</a></li>
+        <li><a class="service" href="service.html">客户服务</a></li>
+        <li><a class="info" href="info.html">资讯中心</a></li>
+        <li><a class="about" href="about.html">走进易如基金</a></li>		
+    </ul>
+</div>
+<div class="mainbox">
+	<p class="add">当前位置:&nbsp;<a href="index">首页</a>&nbsp;>&nbsp;<a href="info.html">资讯中心</a>&nbsp;>&nbsp;资讯&nbsp;>&nbsp;聚焦易如</p>
+    <div class="mainbox_rt">
+        <p style="text-align:center; font-size:14px; font-weight:bold;">农行新发售易如新兴成长混合基金上市</p>
+        <p style="text-align:center;">时间：2014-08-21 来源：【齐鲁晚报】</p>
+        <p>随着股市回暖，偏股型基金收益率整体走高，新发基金亦深受追捧。记者获悉，8月11日-29日在中国农业银行发售的易如新兴成长混合基金，主要投资于新兴成长股票，旨在严格控制风险的前提下，通过积极主动的资产配置，力争获得超越业绩比较基准的投资收益。</p>
+         <p>据了解，易如新兴成长拟任基金经理呼振翼系易如基金旗下资深基金经理，拥有18年证券从业经历，且投资回报出色。Wind数据显示，截至8月13日，呼振翼自2011年12月28日管理易如增长中小盘以来任职回报达51.92%，年化回报为17.23%；自2013年1月4日管理易如精选以来任职回报为8.25%，年化回报为5.05%。</p>
+          <p>“从当前市场环境来看，经济企稳回升，股市孕育新一轮投资机会。”呼振翼分析表示，从宏观来看，政策维稳意图明显，流动性相对宽松，而随着经济数据反弹，未来企业盈利改善可期。再者，经历了近几年漫长而痛苦的去库存后，很多上游行业目前已出现供需缺口，经济存在一轮补库存的动力，这也为整个经济的短期复苏奠定了基础。另外，地产政策预期的改善，小企业融资成本的下降都会给经济注入新的动力。整体而言，经济一旦企稳，转型仍然是未来发展的必由之路，新兴成长行业面临新一轮发展机遇，市场机会将逐步显现。</p>
+           <p>“事实上，从2012年底以来，行情精彩纷呈，如2012年底至2013年2月份的金融、地产板块，2013年2月份以来的TMT、医药、环保等，股市并不缺乏人气，而新兴成长在2013年至今持续表现亮眼。”呼振翼认为，尽管市场经历了两轮赚钱行情，但当前市场却处于历史低位，整体而言机会大于风险。预计未来以结构性行情为主，成长、周期、消费轮番表现，但成长是永恒的主题，盈利加速改善的行业和公司仍然是市场追捧的热点。因此，我们需要从在各个发展前景光明的子行业中寻找那些处于稳定而高速增长之中的行业或者产业龙头，或是未来能成为龙头的隐形冠军。</p>
+    </div>
+      <div class="mainbox_rt">
+    	<h3>相关内容</h3>
+        <ul>
+            	<li><a href="info2.html">金融深化正当其时——评张育军先生的《金融危机与改革》</a><span>[2014-11-10]</span></li>
+                <li><a href="info3.html">小“药铺”里有“人参”</a><span>[2014-11-03]</span></li>
+                <li><a href="info4.html">易如基金：债市慢牛行情或将延续</a><span>[2014-10-27]</span></li>
+                <li><a href="info5.html">易如双债添利债券基金9月1日正式发行</a><span>[2014-10-27]</span></li>
+                <li><a href="info6.html">农行新发售易如新兴成长混合基金上市</a><span>[2014-10-03]</span></li>
+                <li style="background-image:none; text-align:right;"><a style="font-weight:bold; color:red;" href="info-more1.html">更多>></a></li>
+            </ul>
+    </div>
+</div>
+<div class="footer">
+	<div class="footerbox">
+        <ul>
+        	<li><a href="ZP.html">诚聘英才</a>|</li>
+            <li><a href="contact.html">联系我们</a>|</li>
+            <li><a href="tip.html">风险提示</a>|</li>
+            <li><a href="safe.html">安全提示</a>|</li>
+            <li><a href="clause.html">免责条款</a>|</li>
+            <li><a href="law.html">法律法规</a></li>
+        </ul>
+        <div>Copyright © 2006-2013 YIRU.com All rights reserved</div>
+        <div>北京易如投资管理有限公司版权所有</div>
+    </div>
+</div>
+</body>
+</html>

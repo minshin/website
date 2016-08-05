@@ -1,0 +1,142 @@
+<!doctype html>
+<html>
+<head>
+<style>
+*{ margin:0; padding:0; font-family:Arial, Helvetica, sans-serif,"宋体"; font-size:12px;}
+li{ list-style:none;}
+img{border:none 0;}
+body{ background-image:url(images/bg.png);}
+/*header*/
+.header{overflow:hidden;}
+.headerbox{ width:980px; margin:10px auto; }
+.logo{ float:left; display:block; margin-right:80px;}
+.phone{overflow:hidden; padding-top:10px; float:left;}
+.phone img{ float:left; display:block;}
+.phone p{ float:left; margin-left:5px; font-size:14px; font-family:"微软雅黑"; color:#a1653a;}
+.header_rt{ float:right; color:#8a8a8a;}
+.header_rt a{color:#626262; margin:0 10px; line-height:50px;}
+/*nav*/
+.nav { background-color:#d79e6d; margin-top:10px;}
+.navbox{width:980px; margin:0 auto; }
+.navbox li{ float:left; margin:0 20px; line-height:48px;}
+.navbox a{font-family:"微软雅黑";font-size:14px;color:white;}
+.nav .info{color:#804d1f;}
+.navbox a:hover{color:#804d1f; text-decoration:none;}
+/*mainbox*/
+.mainbox{ width:980px; margin:15px auto; overflow:hidden;}
+.add{ color:#999;}
+.add a{ color:#999;}
+/*right*/
+.mainbox_rt{ background-color:white; border:1px solid #e6e6e6; padding:20px; margin-bottom:15px;}
+.mainbox_rt h3{ font-family:"微软雅黑"; font-size:22px; color:#555; margin:0;}
+.mainbox_rt h3 img{ margin-right:10px;}
+.mainbox_rt p{ text-indent:24px; margin-top:10px;}
+.map{ margin-top:20px;}
+.mainbox_rt ul{ margin-top:20px;}
+.mainbox_rt li{ overflow:hidden; background-image:url(images/arrow.png); background-repeat:no-repeat; background-position:left center; padding-left:10px; line-height:34px;}
+.mainbox_rt span{ float:right;}
+.mainbox_rt a{ color:#555;}
+/*footer*/
+.footer{ background-color:white;}
+.footerbox{ width:980px; margin:0 auto;color:#636363; text-align:center;}
+.footerbox ul{ overflow:hidden; margin-left:300px; padding-top:15px;}
+.footerbox li{ float:left;}
+.footerbox a{color:#626262; margin:0 5px;}
+.footerbox div{ padding-bottom:10px;}
+</style>
+<script src="JS/jquery.js"></script>
+<script>
+$(function(){
+	var n=0;
+	$(".worth_tl h2").click(function(){
+		$(".worth_tl h2").removeClass("bold");
+		$(this).addClass("bold");
+		n=$(".worth_tl h2").index(this);
+		$(".worth_hi").addClass("hid");
+		$(".worth_hi").eq(n).removeClass("hid");	
+		});	
+})
+</script>
+<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+<meta charset="utf-8">
+<title>资讯中心-易如投资</title>
+</head>
+
+<body>
+<div class="header">
+	<div class="headerbox">
+        <a class="logo" href="#"><img src="images/logo.png"></a>
+        <div class="phone">
+        	<img src="images/phone.png">
+            <p>客服热线<br></p>
+        </div>
+        <div class="header_rt">
+            <a href="#">收藏网站</a>|
+            <a href="#">设为主页</a>
+        </div>
+	</div>
+</div>
+<div class="nav">
+    <ul class="navbox">
+        <li><a class="index" href="index.html">首页</a></li>
+        <li><a class="product" href="product.html">基金产品</a></li>	
+        <li><a class="online" href="">网上交易</a></li>	
+        <li><a class="finance" href="finance.html">专户理财</a></li>
+        <li><a class="service" href="service.html">客户服务</a></li>
+        <li><a class="info" href="info.html">资讯中心</a></li>
+        <li><a class="about" href="about.html">走进易如基金</a></li>		
+    </ul>
+</div>
+<div class="mainbox">
+	<p class="add">当前位置:&nbsp;<a href="index.html">首页</a>&nbsp;>&nbsp;<a href="info.html">资讯中心</a>&nbsp;>&nbsp;资讯</a>&nbsp;>&nbsp;最新公告</p>
+    <div class="mainbox_rt">
+        <p style="text-align:center; font-size:14px; font-weight:bold;">易如基金管理有限责任公司关于参加上海天天基金销售有限公司申购费率优惠活动的公告</p>
+        <p style="text-align:center;">时间：2014-11-10</p>
+        <p>为满足广大投资者的理财需求，答谢投资者长期以来的支持与信任，向广大投资者提供更好的服务，易如基金管理有限责任公司（以下称“易如基金”）经与上海天天基金销售有限公司（以下称“天天基金”）协商一致，决定针对旗下部分开放式基金产品开展申购费率优惠活动。具体事项公告如下：</p>
+         <p> 1、适用的基金范围</p>
+          <p>本次费率优惠方案仅适用于以下基金产品：</p>
+           <p>产品名称：易如增长中小盘混合型开放式证券投资基金</p>
+           <p>基金代码：400015</p>
+           <p>若易如基金和天天基金一致决定增加或减少上述开放式基金产品范围，易如基金将另行公告。</p>
+           <p>上述基金之外由易如基金管理的、由天天基金代销的开放式基金的费率优惠按照双方其他有效公告方案执行。</p>
+           <p>2、活动时间</p>
+           <p>2014年11月11日至2014年11月14日，投资者通过天天基金网（www.1234567.com.cn）或天天基金手机客户端使用“活期宝”申购上述开放式基金，即可享受本次费率优惠。</p>
+          <p>本次费率优惠活动时间若有调整将另行公告。</p>
+           <p>3、费率优惠具体内容</p>
+           <p>此次费率优惠方案仅适用于上述基金的申购业务，基金转换和定投业务暂不适用此次费率优惠。此次费率优惠具体内容为：</p>
+           <p>投资者通过天天基金“活期宝”办理上述基金的申购业务（不含定期定额申购），可享受“0费率”申购优惠，但基金收取固定费用的除外。</p>
+           <p>4、重要提示</p>
+           <p>（1）本次费率优惠方案仅适用于投资者通过天天基金“活期宝”办理的申购业务；若投资者使用银行卡申购的，相关费率优惠以本公司其他有效公告内容为准。</p>
+           <p>（2）上述基金费率优惠活动的解释权归天天基金所有。优惠活动期间，业务办理的业务规则和流程以天天基金的安排和规定为准。有关优惠活动的具体规定如有变化，以天天基金网（www.1234567.com.cn）的最新公布内容为准，敬请投资者关注。</p>
+           <p>5、风险提示</p>
+          <p>本公司承诺以诚实信用、勤勉尽责的原则管理和运用基金资产，但不保证基金一定盈利，也不保证最低收益。基金的过往业绩及其净值高低并不预示其未来业绩表现。本公司提醒投资者，投资者投资于基金前应认真阅读本基金的基金合同、招募说明书等文件。敬请投资者注意投资风险。</p>
+           <p>特此公告。</p>
+    </div>
+      <div class="mainbox_rt">
+    	<h3>相关内容</h3>
+        <ul>
+            	<li><a href="info6.html">易如基金管理有限责任公司关于参加上海天天基金销...</a><span>[2014-11-10]</span></li>
+                <li><a href="info7.html">易如金账簿货币市场证券投资基金货币市场基金收益...</a><span>[2014-11-03]</span></li>
+                <li><a href="info8.html">易如龙混合型开放式证券投资基金2014年第3季...</a><span>[2014-10-27]</span></li>
+                <li><a href="info8.html">易如精选混合型开放式证券投资基金2014年第3...</a><span>[2014-10-27]</span></li>
+                <li><a href="info8.html">易如金账簿货币市场证券投资基金2014 年第3...</a><span>[2014-10-27]</span></li>
+                <li style="background-image:none; text-align:right;"><a style="font-weight:bold; color:red;" href="info-more2.html">更多>></a></li>
+            </ul>
+    </div>
+</div>
+<div class="footer">
+	<div class="footerbox">
+        <ul>
+        	<li><a href="ZP.html">诚聘英才</a>|</li>
+            <li><a href="contact.html">联系我们</a>|</li>
+            <li><a href="tip.html">风险提示</a>|</li>
+            <li><a href="safe.html">安全提示</a>|</li>
+            <li><a href="clause.html">免责条款</a>|</li>
+            <li><a href="law.html">法律法规</a></li>
+        </ul>
+        <div>Copyright © 2006-2013 YIRU.com All rights reserved</div>
+        <div>北京易如投资管理有限公司版权所有</div>
+    <div>
+</div>
+</body>
+</html>

@@ -1,0 +1,138 @@
+<!doctype html>
+<html>
+<head>
+<style>
+*{ margin:0; padding:0; font-family:Arial, Helvetica, sans-serif,"宋体"; font-size:12px;}
+li{ list-style:none;}
+img{border:none 0;}
+body{ background-image:url(images/bg.png);}
+/*header*/
+.header{overflow:hidden;}
+.headerbox{ width:980px; margin:10px auto; }
+.logo{ float:left; display:block; margin-right:80px;}
+.phone{overflow:hidden; padding-top:10px; float:left;}
+.phone img{ float:left; display:block;}
+.phone p{ float:left; margin-left:5px; font-size:14px; font-family:"微软雅黑"; color:#a1653a;}
+.header_rt{ float:right; color:#8a8a8a;}
+.header_rt a{color:#626262; margin:0 10px; line-height:50px;}
+/*nav*/
+.nav { background-color:#d79e6d; margin-top:10px;}
+.navbox{width:980px; margin:0 auto; }
+.navbox li{ float:left; margin:0 20px; line-height:48px;}
+.navbox a{font-family:"微软雅黑";font-size:14px;color:white;}
+.navbox a:hover{color:#804d1f; text-decoration:none;}
+/*mainbox*/
+.mainbox{ width:980px; margin:15px auto; overflow:hidden;}
+.add{ color:#999;}
+.add a{ color:#999;}
+/*right*/
+.mainbox_rt{ background-color:white; border:1px solid #e6e6e6; padding:20px;}
+.mainbox_rt h3{ font-family:"微软雅黑"; font-size:22px; color:#555; margin:0; border-bottom:2px solid #e0a873;}
+.mainbox_rt h3 img{ margin-right:10px;}
+.mainbox_rt p{ text-indent:24px; margin-top:10px;}
+.map{ margin-top:20px;}
+/*footer*/
+.footer{ background-color:white;}
+.footerbox{ width:980px; margin:0 auto;color:#636363; text-align:center;}
+.footerbox ul{ overflow:hidden; margin-left:300px; padding-top:15px;}
+.footerbox li{ float:left;}
+.footerbox a{color:#626262; margin:0 5px;}
+.footerbox div{ padding-bottom:10px;}
+</style>
+<script src="JS/jquery.js"></script>
+<script>
+$(function(){
+	var n=0;
+	$(".worth_tl h2").click(function(){
+		$(".worth_tl h2").removeClass("bold");
+		$(this).addClass("bold");
+		n=$(".worth_tl h2").index(this);
+		$(".worth_hi").addClass("hid");
+		$(".worth_hi").eq(n).removeClass("hid");	
+		});	
+})
+</script>
+<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+<meta charset="utf-8">
+<title>产品服务-易如付</title>
+</head>
+
+<body>
+<div class="header">
+	<div class="headerbox">
+        <a class="logo" href="#"><img src="images/logo.png"></a>
+        <div class="phone">
+        	<img src="images/phone.png">
+            <p>客服热线<br></p>
+        </div>
+        <div class="header_rt">
+            <a href="#">收藏网站</a>|
+            <a href="#">设为主页</a>
+        </div>
+	</div>
+</div>
+<div class="nav">
+    <ul class="navbox">
+        <li><a class="index" href="index.html">首页</a></li>
+        <li><a class="product" href="product.html">基金产品</a></li>	
+        <li><a class="online" href="">网上交易</a></li>	
+        <li><a class="finance" href="finance.html">专户理财</a></li>
+        <li><a class="service" href="service.html">客户服务</a></li>
+        <li><a class="info" href="info.html">资讯中心</a></li>
+        <li><a class="about" href="about.html">走进易如基金</a></li>		
+    </ul>
+</div>
+<div class="mainbox">
+	<p class="add">当前位置:&nbsp;<a href="index.html">首页</a>&nbsp;>&nbsp;安全提示</p>
+    <div class="mainbox_rt">
+    	<h3>
+        	<img src="images/contact2.png">
+            安全提示
+        </h3>
+        <p>●  谨访网上欺诈：</p>
+        <p>1.   诈骗分子常常通过冒充银行等金融机构向客户发送邮件，意图窃取客户个人信息。这种邮件通常会通知客户您的账户出现问题，并提供一个链接让您确认账号、信用卡/银行卡信息、密码或其他个人信息。请您不要点击这种链接，否则可能会登录到诈骗分子设计的假冒网站，您输入的所有信息将被对方捕获，导致您遭受经济损失。</p>
+        <p>2.   请不要相信任何通过电子邮件、短信、电话等方式索要账号和密码的行为。</p>
+        <p>3.   请您务必在地址栏输入正确网址（http://www.orient-fund.com），不要使用不明来源的链接。</p>
+        <p>●  注意邮件安全：</p>
+        <p>1.   电子邮件的内容有可能被他人截取，请不要在邮件中透露您的个人私密信息。</p>
+        <p>2.   电子邮件附件中可能含有病毒，请不要打开不明来源邮件的附件，并及时删除。</p>
+        <p>●  密码安全措施：</p>
+        <p>1.   请不要使用电话号码、生日、名字等容易被破解的字符作为密码，建议您以英文字母和数字的无意义组合作为密码，提高密码安全强度。</p>
+        <p>2.   请您不定期更换密码，并妥善保管，以防泄漏。</p>
+        <p>3.   请您不要在网吧、图书馆等公共场所进行网上交易，以防他人盗用、窃取账号和密码。</p>
+        <p>4.   请您不要与其他网站使用同一密码，以防同时失窃。</p>
+        <p>●   谨访电脑病毒：</p>
+        <p>病毒或木马文件不仅会使系统瘫痪、删除文件，对您的个人信息安全也构成很大威胁。您可采用以下方法防范病毒与木马程序：</p>
+        <p>1.   定期下载并安装最新的操作系统和浏览器安全程序或补丁；</p>
+        <p>2.   计算机中的hosts文件修改为只读；</p>
+        <p>3.   网络防火墙，防止黑客入侵您的计算机；</p>
+        <p>4.   安装并及时更新杀毒软件，养成定期更新杀毒软件的习惯，防止新型病毒入侵；</p>
+        <p>5.   下载文件后，打开之前请先进行病毒扫描；</p>
+        <p>6.   使用网上银行的电脑不作为资料、文件共享等类型的服务器。</p>
+        <p>7.   不要开启不明来历的电子邮件。</p>
+        <p>●  增强安全意识：</p>
+        <p>1.   不要在公共场所使用东方基金网上交易系统，防止他人偷看您的密码。</p>
+        <p>2.   不要在网吧、图书馆等公用网络上使用东方基金网上交易系统，防止他人安装监测程序或木马程序窃取账号和密码。</p>
+        <p>3.   切勿向他人透露您的身份证号、基金账号、交易密码或任何个人身份识别资料。</p>
+        <p>4.   如果您的个人资料有任何更改（例如，联系方式、地址等有变动），请及时通过东方基金网上交易系统或拨打东方基金客户服务电话400 628 5888修改相关资料。</p>
+        <p>5.   定期查看您的交易账户，核对对账单。</p>
+        <p>6.   登录网上交易后，如需退出，请点击“安全退出”，不要直接关闭浏览器。</p>
+        <p>7.   不要开启不明来历的电子邮件。</p>
+    </div>
+</div>
+<div class="footer">
+	<div class="footerbox">
+        <ul>
+        <li><a href="ZP.html">诚聘英才</a>|</li>
+            <li><a href="contact.html">联系我们</a>|</li>
+            <li><a href="tip.html">风险提示</a>|</li>
+            <li><a href="safe.html">安全提示</a>|</li>
+            <li><a href="clause.html">免责条款</a>|</li>
+            <li><a href="law.html">法律法规</a></li>
+        </ul>
+        <div>Copyright © 2006-2013 YIRU.com All rights reserved</div>
+        <div>北京易如投资管理有限公司版权所有</div>
+    </div>
+</div>
+</body>
+</html>

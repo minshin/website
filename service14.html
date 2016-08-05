@@ -1,0 +1,115 @@
+<!doctype html>
+<html>
+<head>
+<style>
+*{ margin:0; padding:0; font-family:Arial, Helvetica, sans-serif,"宋体"; font-size:12px;}
+li{ list-style:none;}
+img{border:none 0;}
+body{ background-image:url(images/bg.png);}
+/*header*/
+.header{overflow:hidden;}
+.headerbox{ width:980px; margin:10px auto; }
+.logo{ float:left; display:block; margin-right:80px;}
+.phone{overflow:hidden; padding-top:10px; float:left;}
+.phone img{ float:left; display:block;}
+.phone p{ float:left; margin-left:5px; font-size:14px; font-family:"微软雅黑"; color:#a1653a;}
+.header_rt{ float:right; color:#8a8a8a;}
+.header_rt a{color:#626262; margin:0 10px; line-height:50px;}
+/*nav*/
+.nav { background-color:#d79e6d; margin-top:10px;}
+.navbox{width:980px; margin:0 auto; }
+.navbox li{ float:left; margin:0 20px; line-height:48px;}
+.navbox a{font-family:"微软雅黑";font-size:14px;color:white;}
+.nav .service{color:#804d1f;}
+.navbox a:hover{color:#804d1f; text-decoration:none;}
+/*mainbox*/
+.mainbox{ width:980px; margin:15px auto; overflow:hidden;}
+.add{ color:#999;}
+.add a{ color:#999;}
+/*right*/
+.mainbox_rt{ background-color:white; border:1px solid #e6e6e6; padding:20px; margin-bottom:15px; height:660px;}
+.mainbox_rt h3{ font-family:"微软雅黑"; font-size:22px; color:#555; margin:0;}
+.mainbox_rt h3 img{ margin-right:10px;}
+.mainbox_rt p{ text-indent:24px; margin-top:10px;}
+.map{ margin-top:20px;}
+.mainbox_rt a{ color:#555;}
+/*footer*/
+.footer{ background-color:white;}
+.footerbox{ width:980px; margin:0 auto;color:#636363; text-align:center;}
+.footerbox ul{ overflow:hidden; margin-left:300px; padding-top:15px;}
+.footerbox li{ float:left;}
+.footerbox a{color:#626262; margin:0 5px;}
+.footerbox div{ padding-bottom:10px;}
+</style>
+<script src="JS/jquery.js"></script>
+<script>
+$(function(){
+	var n=0;
+	$(".worth_tl h2").click(function(){
+		$(".worth_tl h2").removeClass("bold");
+		$(this).addClass("bold");
+		n=$(".worth_tl h2").index(this);
+		$(".worth_hi").addClass("hid");
+		$(".worth_hi").eq(n).removeClass("hid");	
+		});	
+})
+</script>
+<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+<meta charset="utf-8">
+<title>客户服务-易如投资</title>
+</head>
+
+<body>
+<div class="header">
+	<div class="headerbox">
+        <a class="logo" href="#"><img src="images/logo.png"></a>
+        <div class="phone">
+        	<img src="images/phone.png">
+            <p>客服热线<br></p>
+        </div>
+        <div class="header_rt">
+            <a href="#">收藏网站</a>|
+            <a href="#">设为主页</a>
+        </div>
+	</div>
+</div>
+<div class="nav">
+    <ul class="navbox">
+        <li><a class="index" href="index.html">首页</a></li>
+        <li><a class="product" href="product.html">基金产品</a></li>	
+        <li><a class="online" href="">网上交易</a></li>	
+        <li><a class="finance" href="finance.html">专户理财</a></li>
+        <li><a class="service" href="service.html">客户服务</a></li>
+        <li><a class="info" href="info.html">资讯中心</a></li>
+        <li><a class="about" href="about.html">走进易如基金</a></li>		
+    </ul>
+</div>
+<div class="mainbox">
+	<p class="add">当前位置:&nbsp;<a href="index.html">首页</a>&nbsp;>&nbsp;<a href="service.html">客户服务</a>&nbsp;>&nbsp;投资者教育</p>
+    <div class="mainbox_rt">
+        <p style="text-align:center; font-size:14px; font-weight:bold;">易如基金张岗：睿智之河 静水流深</p>
+        <p style="text-align:center;">时间：2014-10-20 来源：【上海证券报】</p>
+        <p>8月14日，资本市场的又一个神话诞生了：伯克希尔·哈撒韦公司的A类股股价报收于20.285万美元，历史上首次站上20万美元大关。这意味着购买100股伯克希尔·哈撒韦公司股票需要超过1.2亿元人民币。同时也意味着如果有投资者在1964年跟随巴菲特投资伯克希尔·哈撒韦公司的股票，如今将获得超过一万倍的收益。</p>
+         <p>长期关注伯克希尔·哈撒韦公司，是因为持续关注沃伦·巴菲特，但更加关注其背后低调而神秘的合伙人——查理·芒格。因为在我看来，如果说巴菲特是财富创造的神话，是投资大众的偶像，那么，查理·芒格更像是一条深深静流的睿智之河，是专业投资人的指路明灯。在持续多年跟踪芒格的演讲和股东大会上的即席谈话等之后，我被芒格充满智慧的言辞所打动，这也影响到我的投资理念和实践。在此推荐《穷查理宝典：查理·芒格的智慧箴言录》，这本书通过收集芒格的演讲和即席谈话，比较集中地反映了其思想。正如约翰·韦尔奇所言，“这本很棒的著作让他走出神秘，将他的智慧放到你的面前。”</p>
+          <p>在芒格充满智慧的言辞中，我们常常可以找到解决自己诸多困扰和疑惑的答案。因为我是从基本面研究开始自己的投资之路，早期对如何培养市场择时能力会非常的困惑，后来渐渐明白这是专属的能力。而芒格关于“能力圈”的观点让我豁然开朗：每个人都有他的能力圈，要扩大自己的能力圈是非常困难的。我们必须专注于强化自己的既有能力，弄清楚自己能力圈的边界在哪里。</p>
+           <p>在经过自己长期不断的摸索之后，我逐渐形成自己对投资的想法。我认为投资的本质是对企业价值的研究，即专注于发现优质企业，并坚持投资于优质标的。从芒格这里，我更加印证和坚信了投资优质成长企业才是我自己真正的长期获胜之道。芒格认为你必须先评估一个企业的价值，然后才能评估其股票的价值。和巴菲特极其强调“护城河”略有差异的是，芒格认为购买股价公道的伟大企业比购买股价超低的普通企业好。的确，在长期的投资过程中，我们总会面临的是企业的股价已经较好的反映了企业当前的价值，甚至很多时候已经有所透支未来的良好预期，这样的情形下对企业未来的成长趋势判断，对管理层经营能力的评估就显得尤为重要。选择符合产业发展趋势、商业模式清晰、管理优秀的优质企业是成功投资的基础。当然，这需要对企业细致入微的观察，需要用长期的、人文的精神去理解和探求。</p>
+            <p>从芒格身上，我们可以看到每个行业真正的大师身上所体现出来的纪律和耐心的混合物：一种绝不妥协的决心，良好的个性素质——自律、耐心、冷静、独立。作为普通的投资者，我们很难做到像大师一样，但这正是我们不断追求和修炼的目标。因为即使在芒格和巴菲特的世界里，糟糕的结果是可以接受的，但准备不足和仓促决策是不可原谅的。我们更需要努力使自己在能力圈内不断的精进，从而在可控的条件下获得好的收益。</p>
+            <p>最后，借用芒格的两句话并让我们一起牢记：“作为投资者， 沃伦·巴菲特比我第一次遇到他时好得太多了，诀窍就在于不断学习”，“我这辈子遇到的聪明人没有不每天阅读的——没有，一个都没有”。</p>
+    </div>
+</div>
+<div class="footer">
+	<div class="footerbox">
+        <ul>
+        	<li><a href="ZP.html">诚聘英才</a>|</li>
+            <li><a href="contact.html">联系我们</a>|</li>
+            <li><a href="tip.html">风险提示</a>|</li>
+            <li><a href="safe.html">安全提示</a>|</li>
+            <li><a href="clause.html">免责条款</a>|</li>
+            <li><a href="law.html">法律法规</a></li>
+        </ul>
+        <div>Copyright © 2006-2013 YIRU.com All rights reserved</div>
+        <div>北京易如投资管理有限公司版权所有</div>
+    </div>
+</div>
+</body>
+</html>

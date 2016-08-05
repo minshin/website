@@ -1,0 +1,131 @@
+<!doctype html>
+<html>
+<head>
+<style>
+*{ margin:0; padding:0; font-family:Arial, Helvetica, sans-serif,"宋体"; font-size:12px;}
+li{ list-style:none;}
+img{border:none 0;}
+body{ background-image:url(images/bg.png);}
+/*header*/
+.header{overflow:hidden;}
+.headerbox{ width:980px; margin:10px auto; }
+.logo{ float:left; display:block; margin-right:80px;}
+.phone{overflow:hidden; padding-top:10px; float:left;}
+.phone img{ float:left; display:block;}
+.phone p{ float:left; margin-left:5px; font-size:14px; font-family:"微软雅黑"; color:#a1653a;}
+.header_rt{ float:right; color:#8a8a8a;}
+.header_rt a{color:#626262; margin:0 10px; line-height:50px;}
+/*nav*/
+.nav { background-color:#d79e6d; margin-top:10px;}
+.navbox{width:980px; margin:0 auto; }
+.navbox li{ float:left; margin:0 20px; line-height:48px;}
+.navbox a{font-family:"微软雅黑";font-size:14px;color:white;}
+.nav .info{color:#804d1f;}
+.navbox a:hover{color:#804d1f; text-decoration:none;}
+/*mainbox*/
+.mainbox{ width:980px; margin:15px auto; overflow:hidden;}
+.add{ color:#999;}
+.add a{ color:#999;}
+/*right*/
+.mainbox_rt{ background-color:white; border:1px solid #e6e6e6; padding:20px; margin-bottom:15px;}
+.mainbox_rt h3{ font-family:"微软雅黑"; font-size:22px; color:#555; margin:0;}
+.mainbox_rt h3 img{ margin-right:10px;}
+.mainbox_rt p{ text-indent:24px; margin-top:10px;}
+.map{ margin-top:20px;}
+.mainbox_rt ul{ margin-top:20px;}
+.mainbox_rt li{ overflow:hidden; background-image:url(images/arrow.png); background-repeat:no-repeat; background-position:left center; padding-left:10px; line-height:34px;}
+.mainbox_rt span{ float:right;}
+.mainbox_rt a{ color:#555;}
+/*footer*/
+.footer{ background-color:white;}
+.footerbox{ width:980px; margin:0 auto;color:#636363; text-align:center;}
+.footerbox ul{ overflow:hidden; margin-left:300px; padding-top:15px;}
+.footerbox li{ float:left;}
+.footerbox a{color:#626262; margin:0 5px;}
+.footerbox div{ padding-bottom:10px;}
+</style>
+<script src="JS/jquery.js"></script>
+<script>
+$(function(){
+	var n=0;
+	$(".worth_tl h2").click(function(){
+		$(".worth_tl h2").removeClass("bold");
+		$(this).addClass("bold");
+		n=$(".worth_tl h2").index(this);
+		$(".worth_hi").addClass("hid");
+		$(".worth_hi").eq(n).removeClass("hid");	
+		});	
+})
+</script>
+<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+<meta charset="utf-8">
+<title>资讯中心-易如投资</title>
+</head>
+
+<body>
+<div class="header">
+	<div class="headerbox">
+        <a class="logo" href="#"><img src="images/logo.png"></a>
+        <div class="phone">
+        	<img src="images/phone.png">
+            <p>客服热线<br></p>
+        </div>
+        <div class="header_rt">
+            <a href="#">收藏网站</a>|
+            <a href="#">设为主页</a>
+        </div>
+	</div>
+</div>
+<div class="nav">
+    <ul class="navbox">
+        <li><a class="index" href="index.html">首页</a></li>
+        <li><a class="product" href="product.html">基金产品</a></li>	
+        <li><a class="online" href="">网上交易</a></li>	
+        <li><a class="finance" href="finance.html">专户理财</a></li>
+        <li><a class="service" href="service.html">客户服务</a></li>
+        <li><a class="info" href="info.html">资讯中心</a></li>
+        <li><a class="about" href="about.html">走进易如基金</a></li>		
+    </ul>
+</div>
+<div class="mainbox">
+	<p class="add">当前位置:&nbsp;<a href="index.html">首页</a>&nbsp;>&nbsp;<a href="info.html">资讯中心</a>&nbsp;>&nbsp;资讯</a>&nbsp;>&nbsp;聚焦易如</p>
+    <div class="mainbox_rt">
+        <p style="text-align:center; font-size:14px; font-weight:bold;">易如基金呼振翼：价值派与成长派并不冲突</p>
+        <p style="text-align:center;">时间：2014-08-19 作者：【陈俊岭 范伊歌】 来源：【上海证券报】</p>
+        <p>“价值也好，成长也好，其实只是观察事物的角度有区别，但最终挣钱的时候都是一样的。” 谈及投资风格，易如新兴成长混合基金拟任基金经理呼振翼对记者表示，成长派和价值派之间并不存在冲突。</p>
+         <p>在呼振翼看来，所谓成长投资，真正的价值是找到一个好的公司。而真正的好公司要经过市场化商业对抗的考验，就像一场战争一样，只有让所有人都充分地进来一起“战斗”，最后打赢的才是最优秀的价值投资标的。</p>
+          <p>“我们现在投的成长股更多地接近于新一轮的周期股，这就像2007年以前大家投煤炭有色工程机械一样。价值投资者反而不会买这些股票，他买的反而是那些更长的，甚至可以看到10年以后的股票。”呼振翼称。</p>
+           <p>与宏观环境相比，呼振翼更看重的是对行业和公司的研究，注重的是“上路”冷静的分析和判断。“投资就像开车一样，不能说路面上没有交通事故，但安全驾驶依靠的是我们自己的判断。” 他相信如果出现“事故”，首先一定是自己的判断有错，所有投资都是自己在做投资，跟别人没有任何关系。</p>
+           <p>基于这种认识，呼振翼表示，“在选股策略上，首先我会看几个方向，看哪些行业变化最大。第二，在这个行业里选择哪些公司。在公司选择上，要选择那些你认为最有特点、最有独特性、最有核心竞争力，或者是老板最有想法的公司。”相对于充满随机性的市场周期，更重要的是去看公司和管理人。与选股相比，择时只是最后在决定买卖时再去考虑。</p>
+           <p>比如2012年底，呼振翼曾持仓买进后疯狂上涨的文化传媒类股票。对此他表示，今年年底或者明年年初还会去关注。“因为对于影视类的文化传媒公司来说，首先票房可以有一个新的预期。第二，这个行业本身就具有扩张性。也许行业的扩张性在明年会有新的变化，而这类上市公司的业绩弹性也值得重新观察。”</p>
+           <p>谈及近期市场表现，尤其是沪港通对A股估值的修复，呼振翼表示，这是正常合理波动下的一种反应。在此之前传统行业的公司也跌了很久了，现在上涨也正常，长期来看需要预测到基本面。</p>
+           <p>就投资机会而言，呼振翼认为目前经济复苏预期为股市企稳奠定了扎实的基础。而且股市经过长期调整，风险得以释放，中长期建仓时机将逐步显现。具体来看，他认为新兴成长股票面临新一轮投资机遇，“在经济转型的大背景下，新兴成长股票普遍存在于发展前景光明的行业里，公司处于稳定而高速的增长之中，大多属于行业或者产业龙头，或是未来能成为龙头的隐形冠军。”</p>
+    </div>
+      <div class="mainbox_rt">
+    	<h3>相关内容</h3>
+        <ul>
+            	<li><a href="info2.html">金融深化正当其时——评张育军先生的《金融危机与改革》</a><span>[2014-11-10]</span></li>
+                <li><a href="info3.html">小“药铺”里有“人参”</a><span>[2014-11-03]</span></li>
+                <li><a href="info4.html">易如基金：债市慢牛行情或将延续</a><span>[2014-10-27]</span></li>
+                <li><a href="info5.html">易如双债添利债券基金9月1日正式发行</a><span>[2014-10-27]</span></li>
+                <li><a href="info6.html">农行新发售易如新兴成长混合基金上市</a><span>[2014-10-03]</span></li>
+                <li style="background-image:none; text-align:right;"><a style="font-weight:bold; color:red;" href="info-more1.html">更多>></a></li>
+            </ul>
+    </div>
+</div>
+<div class="footer">
+	<div class="footerbox">
+        <ul>
+        	<li><a href="ZP.html">诚聘英才</a>|</li>
+            <li><a href="contact.html">联系我们</a>|</li>
+            <li><a href="tip.html">风险提示</a>|</li>
+            <li><a href="safe.html">安全提示</a>|</li>
+            <li><a href="clause.html">免责条款</a>|</li>
+            <li><a href="law.html">法律法规</a></li>
+        </ul>
+        <div>Copyright © 2006-2013 YIRU.com All rights reserved</div>
+        <div>北京易如投资管理有限公司版权所有</div>
+    </div>
+</div>
+</body>
+</html>

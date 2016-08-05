@@ -1,0 +1,123 @@
+<!doctype html>
+<html>
+<head>
+<style>
+*{ margin:0; padding:0; font-family:Arial, Helvetica, sans-serif,"宋体"; font-size:12px;}
+li{ list-style:none;}
+img{border:none 0;}
+body{ background-image:url(images/bg.png);}
+/*header*/
+.header{overflow:hidden;}
+.headerbox{ width:980px; margin:10px auto; }
+.logo{ float:left; display:block; margin-right:80px;}
+.phone{overflow:hidden; padding-top:10px; float:left;}
+.phone img{ float:left; display:block;}
+.phone p{ float:left; margin-left:5px; font-size:14px; font-family:"微软雅黑"; color:#a1653a;}
+.header_rt{ float:right; color:#8a8a8a;}
+.header_rt a{color:#626262; margin:0 10px; line-height:50px;}
+/*nav*/
+.nav { background-color:#d79e6d; margin-top:10px;}
+.navbox{width:980px; margin:0 auto; }
+.navbox li{ float:left; margin:0 20px; line-height:48px;}
+.navbox a{font-family:"微软雅黑";font-size:14px;color:white;}
+.nav .service{color:#804d1f;}
+.navbox a:hover{color:#804d1f; text-decoration:none;}
+/*mainbox*/
+.mainbox{ width:980px; margin:15px auto; overflow:hidden;}
+.add{ color:#999;}
+.add a{ color:#999;}
+/*right*/
+.mainbox_rt{ background-color:white; border:1px solid #e6e6e6; padding:20px; margin-bottom:15px; height:660px;}
+.mainbox_rt h3{ font-family:"微软雅黑"; font-size:22px; color:#555; margin:0;}
+.mainbox_rt h3 img{ margin-right:10px;}
+.mainbox_rt p{ text-indent:24px; margin-top:10px;}
+.map{ margin-top:20px;}
+.mainbox_rt a{ color:#555;}
+/*footer*/
+.footer{ background-color:white;}
+.footerbox{ width:980px; margin:0 auto;color:#636363; text-align:center;}
+.footerbox ul{ overflow:hidden; margin-left:300px; padding-top:15px;}
+.footerbox li{ float:left;}
+.footerbox a{color:#626262; margin:0 5px;}
+.footerbox div{ padding-bottom:10px;}
+</style>
+<script src="JS/jquery.js"></script>
+<script>
+$(function(){
+	var n=0;
+	$(".worth_tl h2").click(function(){
+		$(".worth_tl h2").removeClass("bold");
+		$(this).addClass("bold");
+		n=$(".worth_tl h2").index(this);
+		$(".worth_hi").addClass("hid");
+		$(".worth_hi").eq(n).removeClass("hid");	
+		});	
+})
+</script>
+<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+<meta charset="utf-8">
+<title>客户服务-易如投资</title>
+</head>
+
+<body>
+<div class="header">
+	<div class="headerbox">
+        <a class="logo" href="#"><img src="images/logo.png"></a>
+        <div class="phone">
+        	<img src="images/phone.png">
+            <p>客服热线<br></p>
+        </div>
+        <div class="header_rt">
+            <a href="#">收藏网站</a>|
+            <a href="#">设为主页</a>
+        </div>
+	</div>
+</div>
+<div class="nav">
+    <ul class="navbox">
+        <li><a class="index" href="index.html">首页</a></li>
+        <li><a class="product" href="product.html">基金产品</a></li>	
+        <li><a class="online" href="">网上交易</a></li>	
+        <li><a class="finance" href="finance.html">专户理财</a></li>
+        <li><a class="service" href="service.html">客户服务</a></li>
+        <li><a class="info" href="info.html">资讯中心</a></li>
+        <li><a class="about" href="about.html">走进易如基金</a></li>		
+    </ul>
+</div>
+<div class="mainbox">
+	<p class="add">当前位置:&nbsp;<a href="index.html">首页</a>&nbsp;>&nbsp;<a href="service.html">客户服务</a>&nbsp;>&nbsp;投资者教育</p>
+    <div class="mainbox_rt">
+        <p style="text-align:center; font-size:14px; font-weight:bold;">易如基金李坤元：平和、冷静 做长跑制胜者</p>
+        <p style="text-align:center;">时间：2014-10-20 来源：【上海证券报】</p>
+        <p>市场先生”是个热心肠，每天他都会告诉你他认为你手里的股票价值几何。</p>
+         <p style="text-align:right;">——本杰明·格雷厄姆：《聪明的投资者》</p>
+          <p>市场值得我们敬畏，它总是给我们呈现出多种多样的变化。作为市场中的投资者，永远怀着一颗谦逊的心去聆听、思考和学习，不断的突破自己的思维界限，学无止境！</p>
+           <p>2006年从业以来，我一路经历了卖方和买方，期间也看过不少投资方面的书籍，大多是成熟国家比如美国的范例和一些投资大师的心得体会。在汲取营养的同时，也在不断的思考在中国A股这个土壤上适合的投资方法。在诸多的著作中，每一本书都像是一个灯塔，为你在黑暗中照亮了一条路，在不同的心境下反复阅读，体会也完全不同。如果一定要挑出来一本书，我推荐“证券分析之父”本杰明·格雷厄姆的经典之作《聪明的投资者》。</p>
+            <p>本杰明·格雷厄姆是投资大师沃伦·巴菲特的导师。这个在同事眼中“全身上下都闪耀着智慧的灵光”、“长的有点难看”的“有意思的小矮个”，在巴菲特看来就像一个“英雄”，地位和自己的父亲一样崇高。与华尔街的股票经纪人不同，格雷厄姆愿意与人分享自己的思想，愿意与人沟通，华尔街于他而言更像是一个抽象的符号。“当他的学生靠着他的知识挣大钱，而他自己却不以为然。”就像格雷厄姆的一个学生评价的这样，满脑子学问的他，在上世纪30年代美国经济大萧条后，历时20年先后创作了“价值投资理念”里程碑式的两部著作——《证券分析》和《聪明的投资者》。</p>
+            <p>如果说《证券分析》奠定了价值投资的基石，那么，《聪明的投资者》则在此基础上，为普通投资者提供了可供选择的投资策略和执行层面的指导。正因为此，巴菲特在奥马哈大学讲授“投资学原理”这门课程的好几个学期，都是将《聪明的投资者》作为教材。</p>
+            <p>于我而言，格雷厄姆提及的两个投资谏言令我印象深刻：</p>
+            <p>1、如果总是做显而易见或大家都在做的事，你就赚不到钱。</p>
+            <p>2、对于理性投资，精神态度比技巧更重要。</p>
+            <p>对于第一点，在A股投资上，我们很容易想到大家常常讨论的“预期差”。股价的持续上涨往往伴随着市场预期的快速提升，在大家一致乐观的时候，往往会“泡沫化”公司的市值，把长期趋势短期化。如果这时候再想赚钱，尤其是赚取较大的利润空间是非常困难的。</p>
+            <p>对于第二点，每个人都在和自己的内心和弱点作斗争。投资是一项艺术，理性与感性在投资中并不是对立的，如何能找到自己的平衡点很重要。</p>
+            <p>市场面前，每种投资方法都很难判断好与坏，对与错，适合自己的就是最好的。古今中外，在投资的浩瀚天空中，涌现出一批又一批优秀的投资者，均没有放之四海而皆准的方法。我们所能做的是不断的学习、反思，在一次次的失败抑或成功后去平和自己的心态，找到适合自己的方法。</p>
+            <p>在我的投资框架中，并没有永恒的价值与成长，任何行业和公司都可能经历从小变大的过程，我要做的是努力找到未来可以长大的公司，分享公司快速成长带来的收益。与此同时，注重风险控制，永远在乐观中保持一份清醒，享受但不沉醉于市场的波动。</p>
+            <p>亦如格雷厄姆所言，“市场先生”是个热心肠！市场变化何其多！而于我：保持内心的平静，不去盲从接受，用理性的深入分析去战胜感情用事的冲动，力争做长跑中的胜者。</p>
+    </div>
+</div>
+<div class="footer">
+	<div class="footerbox">
+        <ul>
+        	<li><a href="ZP.html">诚聘英才</a>|</li>
+            <li><a href="contact.html">联系我们</a>|</li>
+            <li><a href="tip.html">风险提示</a>|</li>
+            <li><a href="safe.html">安全提示</a>|</li>
+            <li><a href="clause.html">免责条款</a>|</li>
+            <li><a href="law.html">法律法规</a></li>
+        </ul>
+        <div>Copyright © 2006-2013 YIRU.com All rights reserved</div>
+        <div>北京易如投资管理有限公司版权所有</div>
+    </div>
+</div>
+</body>
+</html>

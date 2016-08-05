@@ -1,0 +1,127 @@
+<!doctype html>
+<html>
+<head>
+<style>
+*{ margin:0; padding:0; font-family:Arial, Helvetica, sans-serif,"宋体"; font-size:12px;}
+li{ list-style:none;}
+img{border:none 0;}
+body{ background-image:url(images/bg.png);}
+/*header*/
+.header{overflow:hidden;}
+.headerbox{ width:980px; margin:10px auto; }
+.logo{ float:left; display:block; margin-right:80px;}
+.phone{overflow:hidden; padding-top:10px; float:left;}
+.phone img{ float:left; display:block;}
+.phone p{ float:left; margin-left:5px; font-size:14px; font-family:"微软雅黑"; color:#a1653a;}
+.header_rt{ float:right; color:#8a8a8a;}
+.header_rt a{color:#626262; margin:0 10px; line-height:50px;}
+/*nav*/
+.nav { background-color:#d79e6d; margin-top:10px;}
+.navbox{width:980px; margin:0 auto; }
+.navbox li{ float:left; margin:0 20px; line-height:48px;}
+.navbox a{font-family:"微软雅黑";font-size:14px;color:white;}
+.nav .info{color:#804d1f;}
+.navbox a:hover{color:#804d1f; text-decoration:none;}
+/*mainbox*/
+.mainbox{ width:980px; margin:15px auto; overflow:hidden;}
+.add{ color:#999;}
+.add a{ color:#999;}
+/*right*/
+.mainbox_rt{ background-color:white; border:1px solid #e6e6e6; padding:20px; margin-bottom:15px;}
+.mainbox_rt h3{ font-family:"微软雅黑"; font-size:22px; color:#555; margin:0;}
+.mainbox_rt h3 img{ margin-right:10px;}
+.mainbox_rt p{ text-indent:24px; margin-top:10px;}
+.map{ margin-top:20px;}
+.mainbox_rt ul{ margin-top:20px;}
+.mainbox_rt li{ overflow:hidden; background-image:url(images/arrow.png); background-repeat:no-repeat; background-position:left center; padding-left:10px; line-height:34px;}
+.mainbox_rt span{ float:right;}
+.mainbox_rt a{ color:#555;}
+/*footer*/
+.footer{ background-color:white;}
+.footerbox{ width:980px; margin:0 auto;color:#636363; text-align:center;}
+.footerbox ul{ overflow:hidden; margin-left:300px; padding-top:15px;}
+.footerbox li{ float:left;}
+.footerbox a{color:#626262; margin:0 5px;}
+.footerbox div{ padding-bottom:10px;}
+</style>
+<script src="JS/jquery.js"></script>
+<script>
+$(function(){
+	var n=0;
+	$(".worth_tl h2").click(function(){
+		$(".worth_tl h2").removeClass("bold");
+		$(this).addClass("bold");
+		n=$(".worth_tl h2").index(this);
+		$(".worth_hi").addClass("hid");
+		$(".worth_hi").eq(n).removeClass("hid");	
+		});	
+})
+</script>
+<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+<meta charset="utf-8">
+<title>资讯中心-易如投资</title>
+</head>
+
+<body>
+<div class="header">
+	<div class="headerbox">
+        <a class="logo" href="#"><img src="images/logo.png"></a>
+        <div class="phone">
+        	<img src="images/phone.png">
+            <p>客服热线<br></p>
+        </div>
+        <div class="header_rt">
+            <a href="#">收藏网站</a>|
+            <a href="#">设为主页</a>
+        </div>
+	</div>
+</div>
+<div class="nav">
+    <ul class="navbox">
+        <li><a class="index" href="index.html">首页</a></li>
+        <li><a class="product" href="product.html">基金产品</a></li>	
+        <li><a class="online" href="">网上交易</a></li>	
+        <li><a class="finance" href="finance.html">专户理财</a></li>
+        <li><a class="service" href="service.html">客户服务</a></li>
+        <li><a class="info" href="info.html">资讯中心</a></li>
+        <li><a class="about" href="about.html">走进易如基金</a></li>		
+    </ul>
+</div>
+<div class="mainbox">
+	<p class="add">当前位置:&nbsp;<a href="index.html">首页</a>&nbsp;>&nbsp;<a href="info.html">资讯中心</a>&nbsp;>&nbsp;资讯</a>&nbsp;>&nbsp;最新公告</p>
+    <div class="mainbox_rt">
+        <p style="text-align:center; font-size:14px; font-weight:bold;">易如金账簿货币市场证券投资基金货币市场基金收益支付公告</p>
+        <p style="text-align:center;">时间：2014-11-10</p>
+        <p>咨询渠道</p>
+         <p> 代销机构客户服务电话：中国建设银行股份有限公司（95533）、中国工商银行股份有限公司（95588）、中国农业银行股份有限公司（95599）、中国银行股份有限公司（95566）、中国民生银行股份有限公司（95568）、中国邮政储蓄银行股份有限公司（11185）、北京银行股份有限公司（95526）、招商银行股份有限公司(95555)、交通银行股份有限公司（95559）、东北证券股份有限公司（4006000686）、中国银河证券股份有限公司（4008-888-888）、国泰君安证券股份有限公司（400-8888-666）、中信建投证券有限责任公司（400-8888-108）、海通证券股份有限公司（400-8888-001）、易如证券股份有限公司（95503）、广发证券股份有限公司（95575）、山西证券股份有限公司（400-666-1618）、光大证券股份有限公司（10108998）、国信证券有限责任公司（深圳地区:0755-25822666、全国(深圳外):800-810-8868），中信证券股份有限公司（95558）、申银万国证券股份有限公司（021-962505）、东海证券有限责任公司（400-888-8588）、中信证券（浙江）有限责任公司（0571-96598）、中信万通证券有限责任公司（0532-96577）、安信证券股份有限公司（400-800-1001）、长江证券股份有限公司（4008-888-999）、招商证券股份有限公司（95565、4008-888-111）、国元证券股份有限公司（400-8888-777）、齐鲁证券有限公司（95538）、江海证券有限公司（4006-662-288）、宏源证券股份有限公司（4008-000-562）、华福证券有限责任公司（96326）、五矿证券有限公司（40018-40028）、东莞证券有限责任公司（961130，省外请加拨区号0769）、华安证券有限责任公司（96518、4008-096-518）、方正证券股份有限公司（95571）、恒泰证券股份有限公司（400-628-5888）、深圳众禄基金销售有限公司（400-678-8887）、上海天天基金销售有限公司（400-1818-188）、杭州数米基金销售有限公司（400-076-6123）、上海长量基金销售投资顾问有限公司（400-089-1289）、上海好买基金销售有限公司（400-700-9665）、东莞银行股份有限公司（省内：96228、省外：400-119-6228）、北京展恒基金销售有限公司（400-888-6661）、吉林银行股份有限公司（400-889-6666）、联讯证券（400-888-8929）、中山证券（400-102-2011）、中国国际期货（95162）、钱景财富（400-688-5958）、深圳新兰德（400-994-5899）、浙江同花顺（400-877-3772）、方正证券（95571）、华鑫证券（400-109-9918）。</p>
+
+          
+    </div>
+      <div class="mainbox_rt">
+    	<h3>相关内容</h3>
+        <ul>
+            	<li><a href="info6.html">易如基金管理有限责任公司关于参加上海天天基金销...</a><span>[2014-11-10]</span></li>
+                <li><a href="info7.html">易如金账簿货币市场证券投资基金货币市场基金收益...</a><span>[2014-11-03]</span></li>
+                <li><a href="info8.html">易如龙混合型开放式证券投资基金2014年第3季...</a><span>[2014-10-27]</span></li>
+                <li><a href="info8.html">易如精选混合型开放式证券投资基金2014年第3...</a><span>[2014-10-27]</span></li>
+                <li><a href="info8.html">易如金账簿货币市场证券投资基金2014 年第3...</a><span>[2014-10-27]</span></li>
+                <li style="background-image:none; text-align:right;"><a style="font-weight:bold; color:red;" href="info-more2.html">更多>></a></li>
+            </ul>
+    </div>
+</div>
+<div class="footer">
+	<div class="footerbox">
+        <ul>
+        	<li><a href="ZP.html">诚聘英才</a>|</li>
+            <li><a href="contact.html">联系我们</a>|</li>
+            <li><a href="tip.html">风险提示</a>|</li>
+            <li><a href="safe.html">安全提示</a>|</li>
+            <li><a href="clause.html">免责条款</a>|</li>
+            <li><a href="law.html">法律法规</a></li>
+        </ul>
+        <div>Copyright © 2006-2013 YIRU.com All rights reserved</div>
+        <div>北京易如投资管理有限公司版权所有</div>
+    </div>
+</div>
+</body>
+</html>

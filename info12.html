@@ -1,0 +1,131 @@
+<!doctype html>
+<html>
+<head>
+<style>
+*{ margin:0; padding:0; font-family:Arial, Helvetica, sans-serif,"宋体"; font-size:12px;}
+li{ list-style:none;}
+img{border:none 0;}
+body{ background-image:url(images/bg.png);}
+/*header*/
+.header{overflow:hidden;}
+.headerbox{ width:980px; margin:10px auto; }
+.logo{ float:left; display:block; margin-right:80px;}
+.phone{overflow:hidden; padding-top:10px; float:left;}
+.phone img{ float:left; display:block;}
+.phone p{ float:left; margin-left:5px; font-size:14px; font-family:"微软雅黑"; color:#a1653a;}
+.header_rt{ float:right; color:#8a8a8a;}
+.header_rt a{color:#626262; margin:0 10px; line-height:50px;}
+/*nav*/
+.nav { background-color:#d79e6d; margin-top:10px;}
+.navbox{width:980px; margin:0 auto; }
+.navbox li{ float:left; margin:0 20px; line-height:48px;}
+.navbox a{font-family:"微软雅黑";font-size:14px;color:white;}
+.nav .info{color:#804d1f;}
+.navbox a:hover{color:#804d1f; text-decoration:none;}
+/*mainbox*/
+.mainbox{ width:980px; margin:15px auto; overflow:hidden;}
+.add{ color:#999;}
+.add a{ color:#999;}
+/*right*/
+.mainbox_rt{ background-color:white; border:1px solid #e6e6e6; padding:20px; margin-bottom:15px;}
+.mainbox_rt h3{ font-family:"微软雅黑"; font-size:22px; color:#555; margin:0;}
+.mainbox_rt h3 img{ margin-right:10px;}
+.mainbox_rt p{ text-indent:24px; margin-top:10px;}
+.map{ margin-top:20px;}
+.mainbox_rt ul{ margin-top:20px;}
+.mainbox_rt li{ overflow:hidden; background-image:url(images/arrow.png); background-repeat:no-repeat; background-position:left center; padding-left:10px; line-height:34px;}
+.mainbox_rt span{ float:right;}
+.mainbox_rt a{ color:#555;}
+/*footer*/
+.footer{ background-color:white;}
+.footerbox{ width:980px; margin:0 auto;color:#636363; text-align:center;}
+.footerbox ul{ overflow:hidden; margin-left:300px; padding-top:15px;}
+.footerbox li{ float:left;}
+.footerbox a{color:#626262; margin:0 5px;}
+.footerbox div{ padding-bottom:10px;}
+</style>
+<script src="JS/jquery.js"></script>
+<script>
+$(function(){
+	var n=0;
+	$(".worth_tl h2").click(function(){
+		$(".worth_tl h2").removeClass("bold");
+		$(this).addClass("bold");
+		n=$(".worth_tl h2").index(this);
+		$(".worth_hi").addClass("hid");
+		$(".worth_hi").eq(n).removeClass("hid");	
+		});	
+})
+</script>
+<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+<meta charset="utf-8">
+<title>资讯中心-易如投资</title>
+</head>
+
+<body>
+<div class="header">
+	<div class="headerbox">
+        <a class="logo" href="#"><img src="images/logo.png"></a>
+        <div class="phone">
+        	<img src="images/phone.png">
+            <p>客服热线<br></p>
+        </div>
+        <div class="header_rt">
+            <a href="#">收藏网站</a>|
+            <a href="#">设为主页</a>
+        </div>
+	</div>
+</div>
+<div class="nav">
+    <ul class="navbox">
+        <li><a class="index" href="index.html">首页</a></li>
+        <li><a class="product" href="product.html">基金产品</a></li>	
+        <li><a class="online" href="">网上交易</a></li>	
+        <li><a class="finance" href="finance.html">专户理财</a></li>
+        <li><a class="service" href="service.html">客户服务</a></li>
+        <li><a class="info" href="info.html">资讯中心</a></li>
+        <li><a class="about" href="about.html">走进易如基金</a></li>		
+    </ul>
+</div>
+<div class="mainbox">
+	<p class="add">当前位置:&nbsp;<a href="index.html">首页</a>&nbsp;>&nbsp;<a href="info.html">资讯中心</a>&nbsp;>&nbsp;资讯</a>&nbsp;>&nbsp;财经新闻</p>
+    <div class="mainbox_rt">
+        <p style="text-align:center; font-size:14px; font-weight:bold;">央行新创设MLF两月投放7695亿 多维度解读存款下滑</p>
+        <p style="text-align:center;">时间：2014-11-07 作者：【孙璐璐】 来源：【证券时报】</p>
+        <p>针对此前市场传闻的央行在9、10月份向国有银行、股份制银行大规模投放常备借贷便利（SLF）或抵押补充贷款（PSL）一事，央行终于在三季度货币政策执行报告中予以正式回应。</p>
+        <p>不过，令市场颇感意外的是，央行此前的“注水”并非使用SLF，也非PSL，而是创设并开展一种新的货币政策工具MLF（中期借贷便利）。</p>
+        <p>上述报告称，今年9月，央行创设MLF，其为央行提供中期基础货币的货币政策工具，对象为符合宏观审慎管理要求的商业银行、政策性银行，采取质押方式发放，并需提供国债、央行票据、政策性金融债、高等级信用债等优质债券作为合格质押品。</p>
+        <p>更为重要的是，央行在报告中称，9月和10月，中国人民银行通过中期借贷便利向国有商业银行、股份制商业银行、较大规模的城市商业银行和农村商业银行等分别投放基础货币5000亿元和2695亿元，期限均为3个月，利率为3.5%，在提供流动性的同时发挥中期政策利率的作用，引导商业银行降低贷款利率和社会融资成本，支持实体经济增长。</p>
+        <p>央行对此次操作的评价为，在外汇占款渠道投放基础货币出现阶段性放缓的情况下，中期借贷便利起到了补充流动性缺口的作用，有利于保持中性适度的流动性水平。此外，央行澄清，第三季度人民银行未开展常备借贷便利操作，常备借贷便利余额保持为0。</p>
+        <p>对于下一阶段的货币政策思路，报告称，将综合运用数量、价格等多种货币政策工具，完善央行抵押品管理框架，保持适度流动性。优化流动性的投向和结构，落实“定向降准”的相关措施，发挥好信贷政策支持再贷款和再贴现政策的作用。</p>
+        <p>同时，将引导商业银行加强流动性和资产负债管理，做好各时点的流动性安排，合理安排资产负债总量和期限结构，提高流动性风险管理水平。进一步健全市场利率定价自律机制，提高金融机构自主定价能力。继续推进同业存单发行和交易，探索发行面向企业及个人的大额存单，逐步扩大金融机构负债产品市场化定价范围。</p>
+        
+    </div>
+      <div class="mainbox_rt">
+    	<h3>相关内容</h3>
+        <ul>
+            	<li><a href="info12.html">央行新创设MLF两月投放7695亿 多维度解读</a><span>[2014-11-10]</span></li>
+                <li><a href="info13.html">一带一路顶层设计：设丝路基金促基建出海</a><span>[2014-11-03]</span></li>
+                <li><a href="info14.html">国务院削减前置审批 五个“一律”助力升级中国制造</a><span>[2014-10-27]</span></li>
+                <li><a href="info15.html">7铁路项目获批放大稳增长信号 地方称有批文没钱</a><span>[2014-10-27]</span></li>
+                <li><a href="info11.html">证监会：沪港通下的股票交易11月17日开始</a><span>[2014-10-27]</span></li>
+                <li style="background-image:none; text-align:right;"><a style="font-weight:bold; color:red;" href="info-more3.html">更多>></a></li>
+            </ul>
+    </div>
+</div>
+<div class="footer">
+	<div class="footerbox">
+        <ul>
+        	<li><a href="ZP.html">诚聘英才</a>|</li>
+            <li><a href="contact.html">联系我们</a>|</li>
+            <li><a href="tip.html">风险提示</a>|</li>
+            <li><a href="safe.html">安全提示</a>|</li>
+            <li><a href="clause.html">免责条款</a>|</li>
+            <li><a href="law.html">法律法规</a></li>
+        </ul>
+        <div>Copyright © 2006-2013 YIRU.com All rights reserved</div>
+        <div>北京易如投资管理有限公司版权所有</div>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,115 @@
+<!doctype html>
+<html>
+<head>
+<style>
+*{ margin:0; padding:0; font-family:Arial, Helvetica, sans-serif,"宋体"; font-size:12px;}
+li{ list-style:none;}
+img{border:none 0;}
+body{ background-image:url(images/bg.png);}
+/*header*/
+.header{overflow:hidden;}
+.headerbox{ width:980px; margin:10px auto; }
+.logo{ float:left; display:block; margin-right:80px;}
+.phone{overflow:hidden; padding-top:10px; float:left;}
+.phone img{ float:left; display:block;}
+.phone p{ float:left; margin-left:5px; font-size:14px; font-family:"微软雅黑"; color:#a1653a;}
+.header_rt{ float:right; color:#8a8a8a;}
+.header_rt a{color:#626262; margin:0 10px; line-height:50px;}
+/*nav*/
+.nav { background-color:#d79e6d; margin-top:10px;}
+.navbox{width:980px; margin:0 auto; }
+.navbox li{ float:left; margin:0 20px; line-height:48px;}
+.navbox a{font-family:"微软雅黑";font-size:14px;color:white;}
+.nav .service{color:#804d1f;}
+.navbox a:hover{color:#804d1f; text-decoration:none;}
+/*mainbox*/
+.mainbox{ width:980px; margin:15px auto; overflow:hidden;}
+.add{ color:#999;}
+.add a{ color:#999;}
+/*right*/
+.mainbox_rt{ background-color:white; border:1px solid #e6e6e6; padding:20px; margin-bottom:15px; height:660px;}
+.mainbox_rt h3{ font-family:"微软雅黑"; font-size:22px; color:#555; margin:0;}
+.mainbox_rt h3 img{ margin-right:10px;}
+.mainbox_rt p{ text-indent:24px; margin-top:10px;}
+.map{ margin-top:20px;}
+.mainbox_rt a{ color:#555;}
+/*footer*/
+.footer{ background-color:white;}
+.footerbox{ width:980px; margin:0 auto;color:#636363; text-align:center;}
+.footerbox ul{ overflow:hidden; margin-left:300px; padding-top:15px;}
+.footerbox li{ float:left;}
+.footerbox a{color:#626262; margin:0 5px;}
+.footerbox div{ padding-bottom:10px;}
+</style>
+<script src="JS/jquery.js"></script>
+<script>
+$(function(){
+	var n=0;
+	$(".worth_tl h2").click(function(){
+		$(".worth_tl h2").removeClass("bold");
+		$(this).addClass("bold");
+		n=$(".worth_tl h2").index(this);
+		$(".worth_hi").addClass("hid");
+		$(".worth_hi").eq(n).removeClass("hid");	
+		});	
+})
+</script>
+<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+<meta charset="utf-8">
+<title>客户服务-易如投资</title>
+</head>
+
+<body>
+<div class="header">
+	<div class="headerbox">
+        <a class="logo" href="#"><img src="images/logo.png"></a>
+        <div class="phone">
+        	<img src="images/phone.png">
+            <p>客服热线<br></p>
+        </div>
+        <div class="header_rt">
+            <a href="#">收藏网站</a>|
+            <a href="#">设为主页</a>
+        </div>
+	</div>
+</div>
+<div class="nav">
+    <ul class="navbox">
+        <li><a class="index" href="index.html">首页</a></li>
+        <li><a class="product" href="product.html">基金产品</a></li>	
+        <li><a class="online" href="">网上交易</a></li>	
+        <li><a class="finance" href="finance.html">专户理财</a></li>
+        <li><a class="service" href="service.html">客户服务</a></li>
+        <li><a class="info" href="info.html">资讯中心</a></li>
+        <li><a class="about" href="about.html">走进易如基金</a></li>		
+    </ul>
+</div>
+<div class="mainbox">
+	<p class="add">当前位置:&nbsp;<a href="index.html">首页</a>&nbsp;>&nbsp;<a href="service.html">客户服务</a>&nbsp;>&nbsp;投资者教育</p>
+    <div class="mainbox_rt">
+        <p style="text-align:center; font-size:14px; font-weight:bold;">易如基金呼振翼：不忘初心 方得始终</p>
+        <p style="text-align:center;">时间：2014-10-20 来源：【上海证券报】</p>
+        <p>从业以来，陆陆续续看过一些和投资相关的书籍，有体会有心得，也有实践和总结。在这些书中，有些书给予的营养就如同好的电影一样，在不断回味中历久弥新。这些书籍记录了一些成功投资者的经历和感悟，每个人的想法和理解都有令人称道的地方，很难说哪一本书对我影响最大。但给我印象最为深刻的，是约翰·S·戈登的、记述美国华尔街历史的著作——《伟大的博弈》。</p>
+          <p>这本书只是对美国过去300年华尔街的发展做了记录，不涉及对错，不讨论哪种方法更为神圣，只是记录。这本书可以从很多维度引发思考：仅从投资角度来说，它最大程度的呈现了在股市这个利益场上，人性的贪婪和恐惧从未改变，从最早的华尔街的产生，然后到淘金、修铁路、工业革命、摩根帝国、一战前后的繁荣和大萧条，而后是六七十年代的科技泡沫和漂亮50的破灭，以及垃圾债券等等。300年的华尔街也许就是一部级别越来越高，但投机不断上演的历史，如同王朝更迭。如果说在这300年的股市发展中有什么没有变化，那就是泡沫和崩溃交替上演的历史轮回，以及人性的永恒！如2000年的安然，2007年的次贷，都可以从300年间找到相似的影子。</p>
+           <p>日居月诸，潮涨潮落！在股市的潮涌中，优秀的投资者此起彼伏。尽管每次大潮不同，每次举的旗帜不同，所选择方法不同，但最终殊途同归。19世纪的铁路就是现在的移动互联网，一寸铁路还没有，股价已经冲上了天。市场变了么？可能没有！但如果你一定要找到一个可以穿越时空的具体方法，或者说某些具体的标准，最终可能只有离开这个市场。所以300多年来，不变的是人性，变的是应对的具体方法。最终你会发现，人只是一个有限理性的动物，在股市这个大海面前，每个人都只是一个舢板。</p>
+            <p>波普尔说，科学发现的理论都是假说，它们不能被证明，而只能被证伪！我觉得有道理，从华尔街300年的历史中也可以看到，作为投资上的方法论，所有的所谓投资方法都只是暂时没有被证伪而已。所以，我们能够做的其实只是如何面对当下需要处理的投资，在尽可能保护自己的前提下努力盈利。至于怎么做，每个人都可以不同，但探索永无止境。</p>
+            <p>就对投资的理解，个人认为，在这个市场中，我们能够依靠的只有自己，依靠自己的独立思考，在自己能够理解的范畴里面做自己可以平和面对的事情。每个时代都有成功者，如果说他们的共性，那就是找到了在他们那个时代比较适合的方法。仅就投资上的方法论来说，不存在某种神器，可以让我们一劳永逸。时代在前进，所有的方法都会被替代，独立思考，量力而行，尽可能地把自己所想做完，已经是很成功了。结果只是上天给你的分数，如果你够平和、够淡定，一定不是一个低分数。</p>
+            <p>我想，这算是我的一点心得：不忘初心，方得始终！</p>
+    </div>
+</div>
+<div class="footer">
+	<div class="footerbox">
+        <ul>
+        	<li><a href="ZP.html">诚聘英才</a>|</li>
+            <li><a href="contact.html">联系我们</a>|</li>
+            <li><a href="tip.html">风险提示</a>|</li>
+            <li><a href="safe.html">安全提示</a>|</li>
+            <li><a href="clause.html">免责条款</a>|</li>
+            <li><a href="law.html">法律法规</a></li>
+        </ul>
+        <div>Copyright © 2006-2013 YIRU.com All rights reserved</div>
+        <div>北京易如投资管理有限公司版权所有</div>
+    </div>
+</div>
+</body>
+</html>

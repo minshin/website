@@ -1,0 +1,151 @@
+<!doctype html>
+<html>
+<head>
+<style>
+*{ margin:0; padding:0; font-family:Arial, Helvetica, sans-serif,"宋体"; font-size:12px;}
+li{ list-style:none;}
+img{border:none 0;}
+body{ background-image:url(images/bg.png);}
+/*header*/
+.header{overflow:hidden;}
+.headerbox{ width:980px; margin:10px auto; }
+.logo{ float:left; display:block; margin-right:80px;}
+.phone{overflow:hidden; padding-top:10px; float:left;}
+.phone img{ float:left; display:block;}
+.phone p{ float:left; margin-left:5px; font-size:14px; font-family:"微软雅黑"; color:#a1653a;}
+.header_rt{ float:right; color:#8a8a8a;}
+.header_rt a{color:#626262; margin:0 10px; line-height:50px;}
+/*nav*/
+.nav { background-color:#d79e6d; margin-top:10px;}
+.navbox{width:980px; margin:0 auto; }
+.navbox li{ float:left; margin:0 20px; line-height:48px;}
+.navbox a{font-family:"微软雅黑";font-size:14px;color:white;}
+.nav .finance{color:#804d1f;}
+.navbox a:hover{color:#804d1f; text-decoration:none;}
+/*mainbox*/
+.mainbox{ width:980px; margin:15px auto; overflow:hidden;}
+.add{ color:#999;}
+.add a{ color:#999;}
+/*right*/
+.mainbox_rt{ background-color:white; border:1px solid #e6e6e6; padding:20px; margin-bottom:15px;}
+.mainbox_rt h3{ font-family:"微软雅黑"; font-size:22px; color:#555; margin:0;}
+.mainbox_rt h3 img{ margin-right:10px;}
+.mainbox_rt p{ text-indent:24px; margin-bottom:10px;}
+.map{ margin-top:20px;}
+.mainbox_rt ul{ margin-top:20px;}
+.mainbox_rt li{ overflow:hidden; background-image:url(images/arrow.png); background-repeat:no-repeat; background-position:left center; padding-left:10px; line-height:34px;}
+.mainbox_rt span{ float:right;}
+.mainbox_rt a{ color:#555;}
+.mainbox_rt h4{ font-size:14px; color:#e0a873; font-weight:bold; background-image:url(images/zhuanhu1.jpg); background-repeat:no-repeat; background-position:left center; line-height:38px; padding-left:13px;}
+.list{ background-image:url(images/zhuanhu2.png); background-repeat:no-repeat; margin:0 30px; padding:20px;}
+.list .title{ color:#e0a873;}
+.list1{ background-image:url(images/zhuanhu3.png); background-repeat:no-repeat; margin:0 30px; padding:20px;}
+.list2{ background-image:url(images/zhuanhu4.png); background-repeat:no-repeat; margin:0 30px; padding:20px;}
+.list3{ background-image:url(images/zhuanhu5.png); background-repeat:no-repeat; margin:0 30px; padding:20px;}
+/*footer*/
+.footer{ background-color:white;}
+.footerbox{ width:980px; margin:0 auto;color:#636363; text-align:center;}
+.footerbox ul{ overflow:hidden; margin-left:300px; padding-top:15px;}
+.footerbox li{ float:left;}
+.footerbox a{color:#626262; margin:0 5px;}
+.footerbox div{ padding-bottom:10px;}
+</style>
+<script src="JS/jquery.js"></script>
+<script>
+$(function(){
+	var n=0;
+	$(".worth_tl h2").click(function(){
+		$(".worth_tl h2").removeClass("bold");
+		$(this).addClass("bold");
+		n=$(".worth_tl h2").index(this);
+		$(".worth_hi").addClass("hid");
+		$(".worth_hi").eq(n).removeClass("hid");	
+		});	
+})
+</script>
+<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+<meta charset="utf-8">
+<title>专户理财-易如投资</title>
+</head>
+
+<body>
+<div class="header">
+	<div class="headerbox">
+        <a class="logo" href="#"><img src="images/logo.png"></a>
+        <div class="phone">
+        	<img src="images/phone.png">
+            <p>客服热线<br></p>
+        </div>
+        <div class="header_rt">
+            <a href="#">收藏网站</a>|
+            <a href="#">设为主页</a>
+        </div>
+	</div>
+</div>
+<div class="nav">
+    <ul class="navbox">
+        <li><a class="index" href="index.html">首页</a></li>
+        <li><a class="product" href="product.html">基金产品</a></li>	
+        <li><a class="online" href="">网上交易</a></li>	
+        <li><a class="finance" href="finance.html">专户理财</a></li>
+        <li><a class="service" href="service.html">客户服务</a></li>
+        <li><a class="info" href="info.html">资讯中心</a></li>
+        <li><a class="about" href="about.html">走进易如基金</a></li>		
+    </ul>
+</div>
+<div class="mainbox">
+	<p class="add">当前位置:&nbsp;<a href="index.html">首页</a>&nbsp;>&nbsp;<a href="finance.html">专户理财</a>&nbsp;>&nbsp;专户介绍</p>
+    <div class="mainbox_rt">
+    	<h3>
+        	<img src="images/instru.png">
+           专户介绍
+        </h3>
+        <p>专户理财业务（特定客户资产管理业务）是指基金管理公司向特定客户募集资金或者接受特定客户财产委托担任资产管理人，由托管机构担任资产托管人，为资产委托人的利益，运用委托财产进行投资的活动。</p>
+        <h4>  一、专户理财业务分类 </h4>
+        <p>专户理财业务分为"一对一"专户理财业务和"一对多"专户理财业务。</p>
+        <div class="list">
+        	<p class="title">"一对一"专户理财业务</p>
+            <p>1、"一对一"专户理财业务，即为单一客户办理特定资产管理业务。</p>
+            <p>2、资产管理人将与单一客户签订书面资产管理合同，为客户"量身订制"符合其风险收益特征的个性化产品，在严格控制投资风险的基础上，为投资者谋求最大限度的绝对收益。</p>
+            <p>3、客户委托的初始资产不得低于3000万元人民币，中国证监会另有规定的除外。</p>
+            <p class="title" style="margin-top:30px;">"一对多"专户理财业务</p>
+            <p>1、"一对多"专户理财业务，即为特定的多个客户办理特定资产管理业务。</p>
+            <p>2、资产管理人将与客户签订特定多个客户资产管理合同，致力于在多种市场环境下皆为投资者创造绝对收益，实现安全性与收益性的完美结合，为中高端投资者提供更为专属、专业、专注的特定客户资产管理业务。</p>
+            <p>3、"一对多"专户理财业务中符合条件的特定客户，是指委托投资单个资产管理计划初始金额不低于100万元人民币，且能够识别、判断和承担相应投资风险的自然人、法人、依法成立的组织或中国证监会认可的其他特定客户。</p>
+            <p>4、资产管理人为多个客户办理特定资产管理业务的，单个资产管理计划的委托人不得超过200人，但单笔委托金额在300万元人民币以上的投资者数量不受限制；客户委托的初始资产合计不得低于3000万元人民币，但不得超过50亿元人民币；中国证监会另有规定的除外。</p>
+        </div>
+        <h4> 二、专户理财业务投资范围</h4>
+        <div class="list1">
+        	<p>现金、银行存款、股票、债券、证券投资基金、央行票据、非金融企业债务融资工具、资产支持证券、商品期货及其他金融衍生品；</p>
+            <p>未通过证券交易所转让的股权、债权及其他财产权利；</p>
+            <p>中国证监会认可的其他资产。</p>
+            <p>投资于前款第（二）项和第（三）项规定资产的特定资产管理计划称为专项资产管理计划。基金管理公司需设立专门的子公司，通过设立专项资产管理计划开展专项资产管理业务。</p>
+        </div>
+        <h4>  三、专户理财业务投资限制 </h4>
+        <div class="list2">
+        	<p>委托财产的投资组合应当满足法律法规和中国证监会的有关规定；参与股票发行申购时，单个投资组合所申报的金额不得超过该投资组合的总资产，单个投资组合所申报的股票数量不得超过拟发行股票公司本次发行股票的总量。</p>
+        </div>
+        <h4> 四、专户理财业务开放期</h4>
+        <div class="list3">
+        	<p>资产管理合同存续期间，资产管理人可以根据合同的约定，办理特定客户参与和退出资产管理计划的手续，由此发生的合理费用可以由资产委托人承担。</p>
+        	<p>资产管理计划每季度至多开放一次计划份额的参与和退出，为单一客户设立的资产管理计划、为多个客户设立的现金管理类资产管理计划及中国证监会认可的其他资产管理计划除外。</p>
+        </div>
+        <p style="margin-top:15px;">资产委托人可以通过交易所交易平台向符合条件的特定客户转让其持有的资产管理计划份额。</p>
+    </div>
+</div>
+<div class="footer">
+	<div class="footerbox">
+        <ul>
+        	<li><a href="ZP.html">诚聘英才</a>|</li>
+            <li><a href="contact.html">联系我们</a>|</li>
+            <li><a href="tip.html">风险提示</a>|</li>
+            <li><a href="safe.html">安全提示</a>|</li>
+            <li><a href="clause.html">免责条款</a>|</li>
+            <li><a href="law.html">法律法规</a></li>
+        </ul>
+        <div>Copyright © 2006-2013 YIRU.com All rights reserved</div>
+        <div>北京易如投资管理有限公司版权所有</div>
+    </div>
+</div>
+</body>
+</html>

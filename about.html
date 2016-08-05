@@ -1,0 +1,151 @@
+<!doctype html>
+<html>
+<head>
+<style>
+*{ margin:0; padding:0; font-family:Arial, Helvetica, sans-serif,"宋体"; font-size:12px;}
+li{ list-style:none;}
+img{border:none 0;}
+body{ background-image:url(images/bg.png);}
+/*header*/
+.header{overflow:hidden;}
+.headerbox{ width:980px; margin:10px auto; }
+.logo{ float:left; display:block; margin-right:80px;}
+.phone{overflow:hidden; padding-top:10px; float:left;}
+.phone img{ float:left; display:block;}
+.phone p{ float:left; margin-left:5px; font-size:14px; font-family:"微软雅黑"; color:#a1653a;}
+.header_rt{ float:right; color:#8a8a8a;}
+.header_rt a{color:#626262; margin:0 10px; line-height:50px;}
+/*nav*/
+.nav { background-color:#d79e6d; margin-top:10px;}
+.navbox{width:980px; margin:0 auto; }
+.navbox li{ float:left; margin:0 20px; line-height:48px;}
+.navbox a{font-family:"微软雅黑";font-size:14px;color:white;}
+.nav .about{color:#804d1f;}
+.navbox a:hover{color:#804d1f; text-decoration:none;}
+/*mainbox*/
+.mainbox{ width:980px; margin:15px auto; overflow:hidden;}
+.add{ color:#999;}
+.add a{ color:#999;}
+/*left*/
+.mainbox_lf{ float:left;}
+.contact{background-color:white; border:1px solid #e6e6e6; width:250px; padding:20px; margin-bottom:15px;}
+.title_lf{ overflow:hidden; margin-top:0; margin-bottom:10px;}
+.title_lf img{ float:left; display:block;}
+.title_lf div{ float:left; font-family:"微软雅黑"; font-size:22px; color:#e0a873; margin-left:15px; margin-top:5px; position:relative;}
+.title_lf span{ font-size:10px; position:absolute; left:0; top:24px;}
+.color{ color:#c9c0c5;}
+.color span{ color:black;}
+.more{ text-align:center; background-color:#CCC; color:#555; padding:5px 10px; margin-left:60px;}
+/*right*/
+.mainbox_rt{ float:right; width:720px; background-color:white; border:1px solid #e6e6e6; padding:20px;}
+.mainbox_rt h3{ font-family:"微软雅黑"; font-size:22px; color:#555; margin:0; border-bottom:2px solid #e0a873;}
+.mainbox_rt h3 img{ margin-right:10px;}
+.mainbox_rt p{ text-indent:24px; margin-top:20px;}
+/*footer*/
+.footer{ background-color:white;}
+.footerbox{ width:980px; margin:0 auto;color:#636363; text-align:center;}
+.footerbox ul{ overflow:hidden; margin-left:300px; padding-top:15px;}
+.footerbox li{ float:left;}
+.footerbox a{color:#626262; margin:0 5px;}
+.footerbox div{ padding-bottom:10px;}
+</style>
+<script src="JS/jquery.js"></script>
+<script>
+$(function(){
+	var n=0;
+	$(".worth_tl h2").click(function(){
+		$(".worth_tl h2").removeClass("bold");
+		$(this).addClass("bold");
+		n=$(".worth_tl h2").index(this);
+		$(".worth_hi").addClass("hid");
+		$(".worth_hi").eq(n).removeClass("hid");	
+		});	
+})
+</script>
+<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+<meta charset="utf-8">
+<title>走进易如-易如投资</title>
+</head>
+
+<body>
+<div class="header">
+	<div class="headerbox">
+        <a class="logo" href="#"><img src="images/logo.png"></a>
+        <div class="phone">
+        	<img src="images/phone.png">
+            <p>客服热线<br></p>
+        </div>
+        <div class="header_rt">
+            <a href="#">收藏网站</a>|
+            <a href="#">设为主页</a>
+        </div>
+	</div>
+</div>
+<div class="nav">
+    <ul class="navbox">
+        <li><a class="index" href="index.html">首页</a></li>
+        <li><a class="product" href="product.html">基金产品</a></li>	
+        <li><a class="online" href="">网上交易</a></li>	
+        <li><a class="finance" href="finance.html">专户理财</a></li>
+        <li><a class="service" href="service.html">客户服务</a></li>
+        <li><a class="info" href="info.html">资讯中心</a></li>
+        <li><a class="about" href="about.html">走进易如基金</a></li>		
+    </ul>
+</div>
+<div class="mainbox">
+	<p class="add">当前位置:&nbsp;<a href="">首页</a>&nbsp;>&nbsp;<a href="">走进易如基金</a>&nbsp;>&nbsp;公司简介</p>
+	<div class="mainbox_lf">
+    	<div class="contact">
+        	<h1 class="title_lf">
+                <img src="images/phone2.png">
+                <div>联系我们<br><span>Contact&nbsp;Us</span></div>
+            </h1>
+            <p style="font-weight:bold;">北京易如投资管理有限公司</p>
+            <p class="color">办公地址:</p>
+            <p>北京市东城区银河SOHO中心D座18层</p>
+            <p class="color">注册地址:</p>
+            <p>北京市东城区银河SOHO中心D座18层</p>
+            <p class="color">邮编:<span>100033</span></p>
+            <p class="color">传真:<span></span></p>
+            <p class="color">电话:<span></span></p>
+        </div>
+        <div class="contact">
+        	<h1 class="title_lf">
+        	<img src="images/login.png">
+            <div>加入我们<br><span>Contact&nbsp;Us</span></div>
+            </h1>
+            <p>目前我们有8个职位空缺！</p>
+            <p><a class="more" href="ZP.html">了解更多</a></p>
+        </div>
+    </div>
+    <div class="mainbox_rt">
+    	<h3>
+        	<img src="images/contact2.png">
+            公司简介
+        </h3>
+        <p>易如投资管理有限责任公司成立于2004年6月，注册地在北京。目前设立了北京、上海、广州三个分公司。 是一家业务范围覆盖公募业务、专户特定资产管理业务、大资产管理服务等多个领域的综合型资产管理公司，致力于成为值得投资者托付与信赖的财富管理机构。股东包括东北证券股份有限公司（持股64%）、河北省国有资产控股运营有限公司（持股27%）和渤海国际信托有限公司（持股9%）。</p>
+        <p>作为以诚信而立的资产管理人，为持有人创造长期稳健的回报是易如基金的核心价值所在。公司成立以来，已经建立起了一套成熟、高效的投资决策、风险控制、研究支持、运作保障和市场拓展体系。</p>
+        <p>"稳健投资创造持久价值"，未来易如基金将以市场为导向，投资者利益为中心，依托公司完善的治理结构、科学化的风险控制流程，树立知名品牌，提升核心竞争力，努力为千千万万持有人创造优质理财服务，并携手广大投资者共创资本市场美好明天。</p>
+        <p>截止2013年底，公司旗下拥有12只不同风险收益特征的公募基金产品，和20多个特定客户资产管理计划，为200余万客户提供理财服务。</p>
+        <p>公司股东结构稳定，治理结构严谨，管理规范，为公司健康发展提供了优势土壤。</p>
+        <img src="images/contact (2).png">
+        <p>易如基金自成立以来，高度重视风险控制体系的建设，建立完善了保证公司有序运行和基金有效管理的内部控制和风险管理架构。自上而下、由点及面，覆盖到每一部门的运作，贯彻到每一环节的执行，渗透到每一员工的思想行为，权责分明、相互制衡。</p>
+        <img src="images/contact (1).png">
+    </div>
+</div>
+<div class="footer">
+	<div class="footerbox">
+        <ul>
+        	<li><a href="ZP.html">诚聘英才</a>|</li>
+            <li><a href="contact.html">联系我们</a>|</li>
+            <li><a href="tip.html">风险提示</a>|</li>
+            <li><a href="safe.html">安全提示</a>|</li>
+            <li><a href="clause.html">免责条款</a>|</li>
+            <li><a href="law.html">法律法规</a></li>
+        </ul>
+        <div>Copyright © 2006-2013 YIRU.com All rights reserved</div>
+        <div>北京易如投资管理有限公司版权所有</div>
+    </div>
+</div>
+</body>
+</html>

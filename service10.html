@@ -1,0 +1,117 @@
+<!doctype html>
+<html>
+<head>
+<style>
+*{ margin:0; padding:0; font-family:Arial, Helvetica, sans-serif,"宋体"; font-size:12px;}
+li{ list-style:none;}
+img{border:none 0;}
+body{ background-image:url(images/bg.png);}
+/*header*/
+.header{overflow:hidden;}
+.headerbox{ width:980px; margin:10px auto; }
+.logo{ float:left; display:block; margin-right:80px;}
+.phone{overflow:hidden; padding-top:10px; float:left;}
+.phone img{ float:left; display:block;}
+.phone p{ float:left; margin-left:5px; font-size:14px; font-family:"微软雅黑"; color:#a1653a;}
+.header_rt{ float:right; color:#8a8a8a;}
+.header_rt a{color:#626262; margin:0 10px; line-height:50px;}
+/*nav*/
+.nav { background-color:#d79e6d; margin-top:10px;}
+.navbox{width:980px; margin:0 auto; }
+.navbox li{ float:left; margin:0 20px; line-height:48px;}
+.navbox a{font-family:"微软雅黑";font-size:14px;color:white;}
+.nav .service{color:#804d1f;}
+.navbox a:hover{color:#804d1f; text-decoration:none;}
+/*mainbox*/
+.mainbox{ width:980px; margin:15px auto; overflow:hidden;}
+.add{ color:#999;}
+.add a{ color:#999;}
+/*right*/
+.mainbox_rt{ background-color:white; border:1px solid #e6e6e6; padding:20px; margin-bottom:15px; height:660px;}
+.mainbox_rt h3{ font-family:"微软雅黑"; font-size:22px; color:#555; margin:0;}
+.mainbox_rt h3 img{ margin-right:10px;}
+.mainbox_rt p{ text-indent:24px; margin-top:10px;}
+.map{ margin-top:20px;}
+.mainbox_rt a{ color:#555;}
+/*footer*/
+.footer{ background-color:white;}
+.footerbox{ width:980px; margin:0 auto;color:#636363; text-align:center;}
+.footerbox ul{ overflow:hidden; margin-left:300px; padding-top:15px;}
+.footerbox li{ float:left;}
+.footerbox a{color:#626262; margin:0 5px;}
+.footerbox div{ padding-bottom:10px;}
+</style>
+<script src="JS/jquery.js"></script>
+<script>
+$(function(){
+	var n=0;
+	$(".worth_tl h2").click(function(){
+		$(".worth_tl h2").removeClass("bold");
+		$(this).addClass("bold");
+		n=$(".worth_tl h2").index(this);
+		$(".worth_hi").addClass("hid");
+		$(".worth_hi").eq(n).removeClass("hid");	
+		});	
+})
+</script>
+<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+<meta charset="utf-8">
+<title>客户服务-易如投资</title>
+</head>
+
+<body>
+<div class="header">
+	<div class="headerbox">
+        <a class="logo" href="#"><img src="images/logo.png"></a>
+        <div class="phone">
+        	<img src="images/phone.png">
+            <p>客服热线<br></p>
+        </div>
+        <div class="header_rt">
+            <a href="#">收藏网站</a>|
+            <a href="#">设为主页</a>
+        </div>
+	</div>
+</div>
+<div class="nav">
+    <ul class="navbox">
+        <li><a class="index" href="index.html">首页</a></li>
+        <li><a class="product" href="product.html">基金产品</a></li>	
+        <li><a class="online" href="">网上交易</a></li>	
+        <li><a class="finance" href="finance.html">专户理财</a></li>
+        <li><a class="service" href="service.html">客户服务</a></li>
+        <li><a class="info" href="info.html">资讯中心</a></li>
+        <li><a class="about" href="about.html">走进易如基金</a></li>		
+    </ul>
+</div>
+<div class="mainbox">
+	<p class="add">当前位置:&nbsp;<a href="index">首页</a>&nbsp;>&nbsp;<a href="service.html">客户服务</a>&nbsp;>&nbsp;投资者教育</p>
+    <div class="mainbox_rt">
+        <p style="text-align:center; font-size:14px; font-weight:bold;">纯债基金：以纯为美，成其稳远</p>
+        <p style="text-align:center;">时间：2014-11-10 来源：【上海证券报】</p>
+        <p>作为长期投资工具，债券基金逐步成为投资者重要的投资标的。与此同时，在很多投资者的投资组合中，往往也会配置一部分债券型基金作为基础性的防御资产，以便分散风险，降低因股市波动对组合的影响。而在各类细分债券基金类型中，完全与股市“绝缘”、“以纯为美”的纯债基金，不仅是保守型投资者的首选产品，也可以说是防御性资产配置的理想标的！</p>
+         <p>何谓纯债基金？顾名思义，纯债基金是专门投资债券的基金。与普通债券基金（一级/二级）、可转债基金相比，纯债基金既不直接从二级市场买入股票、权证等权益类资产，也不参与一级市场的新股申购或增发新股，也不投资于可转债（可分离交易可转债的纯债部分除外）。由于纯债基金不受股票市场的波动影响，因此净值波动相对较小，风险相对较低。</p>
+          <p>从过往的投资收益来看，纯债基金可谓“以纯为美、成其稳远”，表现颇为稳健。以银河证券基金研究中心三级分类的长期标准型债券基金为例，根据银河证券数据，截至10月31日，参与平均计算的100只长期标准型债券基金（A类）今年以来平均净值增长率为11.44%，71只长期标准型债券基金（B/C类）今年以来平均净值增长率为11.14%。从中长期来看，长期标准型债券基金（A类）近一年、近两年、近三年平均净值增长率亦分别达9.49%、12.16%、19.34%，长期标准型债券基金（B/C类）近一年、近两年、近三年平均净值增长率也分别达到9.05%、11.12%、16.15%。</p>
+           <p>从纯债基金的风险收益特征来看，纯债比较适合具有较低的风险承受能力，希望获得比较稳定的当期收益的同时，又希望通过长期投资获得一部分资本增值的个人投资者和机构投资者，这部分投资者属于安全型客户及稳健型客户。从风险偏好来看，一般来说，这类投资者风险受成能力较低，希望有稳定的长期回报，且有中长期的投资周期。</p>
+            <p>因此，从投资风格来说，纯债基金首先比较适合保守型投资者。因为这类投资者追求较低风险和稳定收益，他们有强烈的投资需求，但是承担风险的能力较低。这些人可能选择银行定期存款或者直接购买国债进行投资，投资期限约三至五年，但又不十分满足于银行定期存款和国债的长期稳定的低收益。</p>
+             <p>再者，从生命周期来看，纯债基金比较适合正处于家庭成熟期和退休期的投资人群。比如处于家庭成熟期的家庭，其子女工作、结婚离开家庭，家庭成为空巢状态到夫妇二人退休前的这段时间，家庭开支比较小，可支配收入较高，理财的重点是扩大投资，希望在承受较低风险的前提下实现资产的稳健增值。而退休后的投资者，其资金大都为之前的积蓄，因此投资和消费都非常保守，可承受风险的能力较弱，其理财风格较为稳健，主要关注稳健性投资。</p>
+             <p>另外，有长期资产配置需求的专业个人投资者和机构投资者，对纯债基金也有相应的配置需求。</p>
+             <p>从当前投资时点看，目前债券市场可谓正处牛途。如易如稳健回报债券基金经理徐昀君表示，考虑到经济短期内还难以全面企稳改善、货币政策还有进一步宽松空间，以及目前债券收益率水平还处在历史相对高位，未来债券市场的牛市行情还将持续。</p>
+    </div>
+</div>
+<div class="footer">
+	<div class="footerbox">
+        <ul>
+        	<li><a href="ZP.html">诚聘英才</a>|</li>
+            <li><a href="contact.html">联系我们</a>|</li>
+            <li><a href="tip.html">风险提示</a>|</li>
+            <li><a href="safe.html">安全提示</a>|</li>
+            <li><a href="clause.html">免责条款</a>|</li>
+            <li><a href="law.html">法律法规</a></li>
+        </ul>
+        <div>Copyright © 2006-2013 YIRU.com All rights reserved</div>
+        <div>北京易如投资管理有限公司版权所有</div>
+    </div>
+</div>
+</body>
+</html>
