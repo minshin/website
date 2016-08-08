@@ -19,15 +19,3 @@ globle_footer += '<div>北京沣润金服有限公司版权所有</div>';
 globle_footer += '</div>';
 globle_footer += '</div>';
 document.write(globle_footer);
-
-$(function(){
-
-	AjaxObj.footgetContact(function(result){
-		if(result.Data.code ==1){
-			$('#footerLeft').html(result.Data.data.contentdetails)
-			//sessionStorage.setItem('contentdetails',result.Data.data.contentdetails)
-		}else{
-			alert(result.Data.msg)
-		}
-	})
-})
