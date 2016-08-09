@@ -110,6 +110,11 @@ body{ background-image:url(images/bg.png);}
 .mainbox_rt p{ text-indent:24px; margin-top:20px;}
 .about_article_figure{margin-top: 20px; width: 600px}
 
+/*------------------- clause page ---------------------*/
+/*main_bottom*/
+.clause_title_icon{width: 30px}
+
+
 /*------------------- finance page ---------------------*/
 /*main_bottom*/
 .main_bottom{ overflow:hidden; margin-top:15px;}
