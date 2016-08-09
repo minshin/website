@@ -94,11 +94,12 @@ body{ background-image:url(images/bg.png);}
 /*------------------- about page ---------------------*/
 /*left*/
 .mainbox_lf{ float:left;}
-.contact{background-color:white; border:1px solid #e6e6e6;/*  width:250px;  */padding:10px; margin-bottom:15px;}
-.title_lf{ overflow:hidden; margin-top:0; margin-bottom:10px;}
-.title_lf img{ float:left; display:block;}
-.title_lf div{ float:left;  font-size:18px; color:#F68657; margin-left:15px; margin-top:0px; position:relative;}
-.title_lf span{ font-size:10px; position:absolute; left:0; top:24px;}
+.contact{background-color:white; /*border:1px solid #e6e6e6;*//*  width:250px;  */padding:10px; margin-bottom:15px;}
+.about_title_lf{ overflow:hidden; margin-top:0; margin-bottom:10px;}
+.about_title_lf img{ float:left; display:block;}
+.about_title_lf div{ float:left;  font-size:18px; color:#F68657; margin-left:15px; margin-top:0px; position:relative;}
+.about_title_lf span{ font-size:10px; position:absolute; left:0; top:24px;}
+.about_title_icon{width: 30px}
 .color{ color:#c9c0c5;}
 .color span{ color:black;}
 .more{ text-align:center; background-color:#CCC; color:#555; padding:5px 10px; margin-left:60px;}
@@ -107,6 +108,7 @@ body{ background-image:url(images/bg.png);}
 .mainbox_rt h3{font-size:18px; color:#555; margin:0; border-bottom:2px solid #F68657;}
 .mainbox_rt h3 img{ margin-right:10px;}
 .mainbox_rt p{ text-indent:24px; margin-top:20px;}
+.about_article_figure{margin-top: 20px; width: 500px}
 
 /*------------------- finance page ---------------------*/
 /*main_bottom*/
