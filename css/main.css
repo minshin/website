@@ -59,10 +59,10 @@ body{ background-image:url(images/bg.png);}
 .column_title span{ color:#999;font-size:10px; position:relative; }
 .column p{ padding:0 20px; margin-top:10px; margin-bottom:0; }
 .column p a,.column li a{ font-size:12px; color:white;  line-height:60px; text-decoration:none;}
-.column .query1{ background-image:url(images/query1.png); background-repeat:no-repeat;}
-.column .query2{ background-image:url(images/query2.png); background-repeat:no-repeat;}
-.column .query1 a{color: #999;}
-.column .query2 a{color: #999;}
+.column .query1{ background-image:url(../images/query1.png); background-repeat:no-repeat;}
+.column .query2{ background-image:url(../images/query2.png); background-repeat:no-repeat;}
+.column .query1 a{color: #fff;}
+.column .query2 a{color: #fff;}
 .column ul{ float:left; margin-right:10px; margin-bottom:0;}
 .column li{ background-color:#F68657; padding:0 10px; margin-top:10px;margin-left: 10px}
 .column li img{ margin-right:5px;}
