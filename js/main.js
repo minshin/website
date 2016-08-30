@@ -14,7 +14,7 @@ $(function(){
 	$(".num"+n).addClass("blueLi");
 	/*点击向右箭头，图片换后一张*/
 	$(".rightArrow").click(function(){
-		if(n<4){
+		if(n<2){
 			n=n+1;	
 		}else{
 			n=0;
@@ -30,7 +30,7 @@ $(function(){
 		if(n>0){
 			n=n-1;
 		}else{
-			n=4;
+			n=2;
 		}
 		document.title=n;
 		$(".banner img").hide();
@@ -50,7 +50,7 @@ $(function(){
 	})
 	var floatImg=function(obj){
 		$(".num li").removeClass("blueLi");
-		if(n<4){
+		if(n<2){
 			n=n+1;	
 		}else{
 			n=0;
